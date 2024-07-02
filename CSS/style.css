@@ -26,3 +26,40 @@ a[title="google"]{
     word-spacing: 20px;
     line-height: 40px;
 }
+
+/* Descendent Selector */
+div p{
+    background-color: yellow;
+}
+
+/* Child Selector */
+div>p{
+    color: black;
+}
+
+span>p{
+    color: blue;
+}
+
+/* Hover Selector */
+h1 a:hover {
+    color: white;
+    font-size: 50px;
+    background-color: blueviolet;
+}
+
+h2 a:hover {
+    color: blue;
+}
+
+h2 a:link {
+    color: green;
+}
+
+h2 a:visited {
+    color: brown;
+}
+
+h2 a:active {
+    color:yellow;
+}
