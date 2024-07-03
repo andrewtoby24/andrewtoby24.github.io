@@ -1,6 +1,6 @@
 /* Universal Selector */
 *{
-    color: red;
+    /* color: red; */
 }
 
 /* Tag or Element Selector */
@@ -62,4 +62,12 @@ h2 a:visited {
 
 h2 a:active {
     color:yellow;
+}
+
+/* Target Selector */
+:target {
+    color: red;
+    border: 5px solid black;
+    line-height: 10px;
+    letter-spacing: 10px;
 }
