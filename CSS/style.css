@@ -71,3 +71,47 @@ h2 a:active {
     line-height: 10px;
     letter-spacing: 10px;
 }
+
+/* Border */
+.borderone{
+    border: 5px solid red;
+}
+
+.bordertwo{
+    border-top: 10px solid yellow;
+    border-left: 10px solid yellow;
+}
+
+.borderthree{
+    border-color: brown yellow;
+    /* Border Style : Solid; */
+    /* Top & Right & Bottom & Left */
+    /* Border-Style : solid dotted; */
+    /* Top bottom & Left Right */
+    /* border-style : solid dotted double; */
+    /* Top & Left Right & Bottom */
+    border-style: solid dotted double dashed;
+    /* Top & Right & Bottom & Left */
+}
+
+.borderwidth{
+    border-style: solid;
+    border-width: 3px 30px;
+}
+
+/* Margin */
+.marginone{
+    margin: 10px 30px 40px 100px;
+    border: 1px solid green;
+}
+
+.margintwo{
+    margin-top: 100px;
+}
+
+/* Padding */
+.padding{
+    /* padding: 100px; */
+    padding-top: 50px;
+    border: 1px solid red;
+}
