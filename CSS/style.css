@@ -1,7 +1,7 @@
 /* Universal Selector */
-*{
+/* *{ */
     /* color: red; */
-}
+/* } */
 
 /* Tag or Element Selector */
 h1{
@@ -114,4 +114,56 @@ h2 a:active {
     /* padding: 100px; */
     padding-top: 50px;
     border: 1px solid red;
+}
+
+/* Layout */
+.inline{
+    border: 2px solid red;
+    display: inline-block;
+    width: 400px;
+}
+
+.block{
+    border: 2px solid green;
+    width: 400px;
+    display: inline-block;
+}
+
+/* Float */
+.float_right img{
+    width: 40%;
+    float: right;
+}
+
+.clear{
+    clear: both;
+}
+
+.float_left img{
+    width: 40%;
+    float: left;
+}
+
+/* Grid */
+.gridOne div,.gridTwo div,.gridThree div,.gridFour div{
+    padding: 20px;
+    color: white;
+    text-align: center;
+}
+
+.gridOne,.gridTwo,.gridThree,.gridFour{
+    display: grid;
+    grid-template-columns: auto auto auto;
+}
+
+.gridTwo{
+    grid-column-gap: 40px;
+}
+
+.gridThree{
+    grid-row-gap: 40px;
+}
+
+.gridFour{
+    grid-gap: 40px;
 }
