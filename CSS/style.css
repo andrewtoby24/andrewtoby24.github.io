@@ -145,13 +145,13 @@ h2 a:active {
 }
 
 /* Grid */
-.gridOne div,.gridTwo div,.gridThree div,.gridFour div{
+.gridOne div,.gridTwo div,.gridThree div,.gridFour div,.gridFive div,.gridSix div{
     padding: 20px;
     color: white;
     text-align: center;
 }
 
-.gridOne,.gridTwo,.gridThree,.gridFour{
+.gridOne,.gridTwo,.gridThree,.gridFour,.gridFive,.gridSix{
     display: grid;
     grid-template-columns: auto auto auto;
 }
@@ -167,3 +167,68 @@ h2 a:active {
 .gridFour{
     grid-gap: 40px;
 }
+
+.columnadd{
+    grid-column-start: 1;
+    grid-column-end: 3;
+}
+
+.rowadd{
+    grid-row-start: 1;
+    grid-row-end: 3;
+}
+
+/* Position */
+.parent_absolute{
+    width: 1200px;
+    height: 500px;
+    border: 2px solid red;
+    position: relative;
+}
+
+.absolute{
+    width: 400px;
+    height: 200px;
+    border: 2px solid green;
+    position: absolute;
+    top: 10px;
+    left: 150px;
+}
+
+.parent_relative{
+    width: 1200px;
+    height: 500px;
+    border: 2px solid blue;
+}
+
+.relative{
+    width: 400px;
+    height: 200px;
+    border: 2px solid purple;
+    position: relative;
+    top: 10px;
+    left: 150px;
+}
+
+.fixed{
+    position: fixed;
+    top: 50px;
+    right: 100px;
+}
+
+/* Font */
+.online {
+    font-family: "Chakra Petch", sans-serif;
+    font-weight: 300;
+    font-style: normal;
+}
+
+@font-face{
+    font-family: "Jost";
+    src: url(Jost/Jost-VariableFont_wght.ttf);
+}
+
+.offline{
+    font-family: "Jost";
+}
+  
