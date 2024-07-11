@@ -1,0 +1,38 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+.nav_logo{
+    width: 100px;
+    height: 100px;
+    margin-left: 50px;
+    margin-top: 10px;
+}
+
+.nav_item{
+    float: right;
+}
+
+.nav_item li{
+    display: inline-block;
+    margin-top: 50px;
+    margin-right: 50px;
+}
+
+.nav_item li a{
+    text-decoration: none;
+    font-size: 18px;
+}
+
+.nav{
+    box-shadow: 0px 10px 20px black;
+}
+
+.nav_item a:hover{
+    color: black;
+}
+
+.cart_nav_item{
+    margin-right: 150px;
+}
