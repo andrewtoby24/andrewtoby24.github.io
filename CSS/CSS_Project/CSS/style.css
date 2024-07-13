@@ -86,24 +86,33 @@
 /* Start Banner Info */
 .banner_info{
     display: grid;
-    grid-template-columns: auto auto auto auto;
+    grid-template-columns: 400px 400px 400px 400px;
     margin-top: 30px;
     grid-gap: 10px;
+    padding: 20px;
+    margin-left: 125px;
 }
 
 .banner_item{
     background-color: white;
     color: black;
-    text-align: left;
-    padding: 20px;
-    border: 1px solid black;
+    padding: 10px 10px;
+    border: 1px solid rgba(0, 0, 0, 0.5);
     border-radius: 5px;
 }
 
-.banner_item p{
-    margin-left: 50px;
+#truck_icon,#phone_icon,#shield_icon,#gift_icon{
+    float: left;
+    padding-right: 15px;
+    padding-top: 4px;
 }
 
-.banner_item i{
-    margin-top: 1000px;
+.banner_item h3{
+    padding-top: 10px;
+    font-size: 15px;
 }
+
+.banner_item p{
+    font-size: 15px;
+}
+/* End Banner Info */
