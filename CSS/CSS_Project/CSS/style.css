@@ -86,18 +86,19 @@
 /* Start Banner Info */
 .banner_info{
     display: grid;
-    grid-template-columns: 400px 400px 400px 400px;
+    grid-template-columns: auto auto auto auto;
     margin-top: 30px;
-    grid-gap: 10px;
+    grid-column-gap: 25px;
     padding: 20px;
-    margin-left: 125px;
+    margin-left: 150px;
+    margin-right: 150px;
 }
 
 .banner_item{
     background-color: white;
     color: black;
     padding: 10px 10px;
-    border: 1px solid rgba(0, 0, 0, 0.5);
+    border: 1px solid gray;
     border-radius: 5px;
 }
 
@@ -110,9 +111,121 @@
 .banner_item h3{
     padding-top: 10px;
     font-size: 15px;
+    padding-bottom: 5px;
 }
 
 .banner_item p{
     font-size: 15px;
 }
 /* End Banner Info */
+
+/* Start Discount Items */
+.promo_title{
+    margin-top: 40px;
+    margin-left: 150px;
+}
+
+.underlined{
+    width: 80px;
+    border: 1px solid red;
+    margin-left: 150px;
+}
+
+.promotion{
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    grid-column-gap: 25px;
+    margin-left: 150px;
+    margin-right: 150px;
+    margin-top: 30px;
+}
+
+.promo_items{
+    border: 1px solid gray;
+    border-radius: 5px;
+    position: relative;
+    padding-bottom: 10px;
+}
+
+.promo_items img{
+    width: 100%;
+}
+
+.promo_items p{
+    text-align: center;
+}
+
+.promo_prices{
+    position: absolute;
+    top: 2%;
+    right: 2%;
+    color: red;
+}
+
+.promo_price{
+    text-decoration: line-through;
+    display: block;
+}
+/* End Discount Items */
+
+/* Start New Arrival Items */
+.new_arrive_title{
+    margin-top: 40px;
+    margin-left: 150px;
+}
+
+.new_arrival{
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    margin-left: 150px;
+    margin-right: 150px;
+    grid-gap: 25px;
+    margin-top: 30px;
+}
+
+.new_arrival_items img{
+    width: 100%;
+}
+
+.new_arrival_text{
+    display: inline-block;
+}
+
+.new_arrival_items{
+    border: 1px solid gray;
+    border-radius: 5px;
+    padding: 10px;
+    position: relative;
+}
+
+.new_arrival_icon{
+    float: right;
+}
+
+.new_arrival_hover_icon{
+    position: absolute;
+    top: 40%;
+    left: 40%;
+    opacity: 0;
+}
+
+.new_arrival_hover_icon a{
+    border: 1px solid red;
+    padding: 10px;
+    background-color: gray;
+    border-radius: 5px;
+    color: red;
+}
+
+.new_arrival_hover_icon a:hover{
+    color: white;
+    background-color: red;
+}
+
+.new_arrival_items:hover .new_arrival_hover_icon{
+    opacity: 1;
+}
+
+.new_arrival_items img:hover{
+    opacity: 0.6;
+}
