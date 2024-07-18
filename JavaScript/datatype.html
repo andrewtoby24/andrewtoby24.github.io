@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DataType</title>
+</head>
+<body>
+    <h1>Datatype</h1>
+
+    <script>
+        // string data type
+        // var name = "Kaung Thant Si Thu";
+        // var name = 'Kaung Thant Si Thu';
+        var name = `Kaung Thant Si Thu`
+        console.log(name);
+        console.log(typeof(name));
+
+        // numeric data type
+        let num = 23;
+        console.log(num);
+        console.log(typeof(num));
+
+        // boolean data type
+        const single = false;
+        console.log(single);
+        console.log(typeof(single));
+
+        // null
+        const son = null;
+        console.log(son);
+        console.log(typeof(son));
+
+        // undefinied
+        var baby;
+        console.log(baby);
+
+        // array data type
+        var array1 = new Array(1,2,3,4,'a','b','c');
+        console.log(array1);
+        console.log(typeof(array1));
+        console.log(array1[4]);
+
+        var multiArray = ['Mg Mg','Ma Ma','Hla Hla',['Aung Aung','Tun Tun'],'Mya Mya'];
+        console.log(multiArray);
+        console.log(multiArray[3][0]);
+
+        // object data type
+        var student= {
+            // key : value
+            name : 'Kaung Thant Si Thu',
+            age : '21',
+            address : 'Yangon, FMI City',
+            color : ['Black','White']
+        }
+
+        console.log(student);
+        console.log(student.name);
+        console.log(student.color[1]);
+
+    </script>
+</body>
+</html>
