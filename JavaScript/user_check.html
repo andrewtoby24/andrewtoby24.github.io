@@ -10,9 +10,9 @@
     <script>
         let inp = parseInt(prompt("Enter Number you like"));
 
-        if (inp / 2 == 0) {
+        if (inp % 2 == 0) {
             document.write("Your Input Number is Even Number");
-        }else if (inp % 2 !== 0) {
+        }else if (inp % 2 == 1) {
             document.write("your Input Number is Odd Number");
         }else{
             document.write("Unknown");
