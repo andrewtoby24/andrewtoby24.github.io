@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Input Multiplication</title>
+</head>
+<body>
+    <h1>Your Multiplication Answer:</h1>
+    <script>
+        var multi = parseInt(prompt('Enter the number you want the multiplication of:'));
+
+        for (let i = 1 ; i <= 12; i++){
+            document.write(`<h1> Your answer for ${multi} x ${i}= ${i * multi}</h1>`);
+        }
+
+        for (let k = 4; k >= 0; k--){
+            for (let h = 0; h <= k; h++){
+                document.write(`*`);
+            }
+            document.write(`<br>`);
+        }
+
+    </script>
+</body>
+</html>
