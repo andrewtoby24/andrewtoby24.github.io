@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Guess Game</title>
+</head>
+<body>
+    <h1>Guess Game</h1>
+
+    <script>
+        let userInput = parseInt(prompt('Enter Your Guess Number : '));
+        let secretNo = 7;
+        let guessTime = 1;
+        while (userInput != secretNo) {
+            if (userInput < secretNo) {
+                alert('Your Guess Number is Smaller than the Secret Number!');      
+            }else{
+                alert('Your Guess Number is Bigger than the Secret Number!')
+            }
+            userInput = parseInt(prompt('Enter Your Guess Number : '));
+            num++;
+        }
+
+        if (userInput = secretNo) {
+            document.write(`Your Guess Number is Correct at the ${guessTime} time`);
+        }
+    </script>
+</body>
+</html>
