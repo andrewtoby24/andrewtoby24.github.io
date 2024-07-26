@@ -11,7 +11,7 @@
     <script>
         let userInput = parseInt(prompt('Enter Your Guess Number : '));
         let secretNo = 7;
-        let guessTime = 1;
+        let guessTime = 0; guessTime++;
         while (userInput != secretNo) {
             if (userInput < secretNo) {
                 alert('Your Guess Number is Smaller than the Secret Number!');      
@@ -19,7 +19,7 @@
                 alert('Your Guess Number is Bigger than the Secret Number!')
             }
             userInput = parseInt(prompt('Enter Your Guess Number : '));
-            num++;
+            guessTime++;
         }
 
         if (userInput = secretNo) {
