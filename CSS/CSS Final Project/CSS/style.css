@@ -1,0 +1,383 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+/* Start Navigation */
+.nav_menu{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: black;
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.5);
+    z-index: 1;
+}
+
+.nav_menu a img{
+    position: absolute;
+    width: 200px;
+    margin-left: 44%;
+    padding-top: 10px;
+    text-align: center;
+}
+.nav_item ul{
+    list-style-type: none;
+    text-align: right;
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+.nav_item ul li{
+    float: none;
+    display: inline-block;
+}
+
+.nav_item ul li:nth-child(1),.nav_item ul li:nth-child(2),.nav_item ul li:nth-child(3){
+    float: left;
+    padding-left: 120px;
+    text-transform: uppercase;
+}
+
+.nav_item ul li:nth-child(4),.nav_item ul li:nth-child(5),.nav_item ul li:nth-child(6){
+    padding-right: 110px;
+    text-transform: uppercase;
+}
+
+.nav_item li a{
+    text-decoration: none;
+    color: white;
+    box-sizing: border-box;
+    padding: 5px;
+    font-size: 18px;
+}
+
+.nav_item li a:hover{
+    background-color: #1991ff;
+    border-radius: 5px;
+}
+/* End Navigation */
+
+/* Offline Font */
+@font-face {
+    font-family: "Poppins";
+    src: url(../Fonts/Poppins/Poppins-Regular.ttf);
+}
+.font{
+    font-family: "Poppins";
+}
+/* Offline Font */
+
+/* Start Footer */
+.footer_grid{
+    display: grid;
+    grid-template-columns: 500px auto auto auto;
+    background-color: black;
+    color: white;
+    padding: 30px 50px 30px 50px;
+}
+
+.footer_grid img{
+    width: 40%;
+}
+
+.footer_aboutus p{
+    font-size: 13px;
+    text-align: justify;
+    padding-top: 20px;
+    padding-right: 20px;
+    padding-bottom: 30px;
+}
+
+.footer_icon{
+    padding-top: 30px;
+}
+
+.footer_icon a{
+    color: white;
+    padding: 10px 20px 10px 20px;
+    border: 1px solid white;
+    text-align: center;
+    border-radius: 10px;
+}
+
+.exp_brand{
+    margin-left: 100px;
+}
+.exp_brand h2{
+    padding-bottom: 35px;
+    font-size: 20px;
+
+}
+.brand_lists{
+    list-style-type: none;
+}
+
+.brand_lists li{
+    padding-top: 18px;
+}
+
+.brand_lists li a{
+    text-decoration: none;
+    color: white;
+    font-size: 15px;
+}
+
+.brand_lists li a:hover{
+    color: #1991ff;
+}
+
+.site_navi{
+    margin-left: 100px;
+}
+
+.site_navi h2{
+    padding-bottom: 35px;
+    font-size: 20px;
+}
+
+.navi_info{
+    list-style-type: none;
+}
+
+.navi_info li{
+    padding-top: 18px;
+}
+
+.navi_info li a{
+    text-decoration: none;
+    color: white;
+    font-size: 15px;
+}
+
+.navi_info li a:hover{
+    color: #1991ff;
+}
+
+.about_footer{
+    margin-left: 100px;
+}
+
+.about_footer h2{
+    padding-bottom: 35px;
+    font-size: 20px;
+}
+
+.about_info{
+    list-style-type: none;
+}
+
+.about_info li{
+    padding-top: 20px;
+}
+
+.about_icon{
+    padding-right: 20px;
+}
+
+.footer_line{
+    border: 1px solid white;
+    margin-bottom: 20px;
+}
+.copyright{
+    grid-column-start: 1;
+    grid-column-end: 5;
+    text-align: center;
+    padding-top: 40px;
+}
+/* End Footer */
+
+/* Start Home Page */
+/* Start Banner */
+.banner{
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    background: linear-gradient(180deg, #17171c, #151631);
+    padding: 50px;
+    grid-row-gap: 30px;
+    grid-column-gap: 30px;
+    margin-top: 70px;
+}
+
+.iph16vS24{
+    grid-column-start: 1;
+    grid-column-end: 5;
+}
+
+.iph16vS24 img{
+    max-width: 50%;
+    border-radius: 10px;
+}
+
+.iph16vS24 a{
+    color: white;
+    font-size: 20px;
+    text-decoration: none;
+    float: right;
+    padding-top: 110px;
+    width: 45%;
+    font-size: 40px;
+}
+
+.iph16vS24:hover a{
+    color: #1991ff;
+}
+
+.zfold6b img,.redmi13b img,.pixel8ab img{
+    max-width: 100%;
+    border-radius: 10px;
+}
+
+.zfold6b a,.redmi13b a,.pixel8ab a{
+    color: white;
+    text-decoration: none;
+    font-size: 25px;
+    text-align: center;
+}
+
+.zfold6b:hover a,.redmi13b:hover a,.pixel8ab:hover a{
+    color: #1991ff;
+}
+
+/* Start Phone Showcase */
+.ps_header{
+    font-size: 30px;
+    margin-left: 50px;
+    margin-top: 70px;
+}
+.phone_showcase{
+    padding: 30px 50px 50px 50px;
+    display: grid;
+    grid-template-columns: auto auto auto;
+    grid-gap: 30px;
+}
+
+.phone_showcase img{
+    width: 50%;
+    padding-left: 90px;
+}
+
+.ps{
+    border: 1px solid none;
+    border-radius: 5px;
+    padding: 20px;
+    box-shadow: 0 1px 11px rgba(0, 0, 0, 0.1);
+}
+
+.ps_title{
+    font-weight: bold;
+    font-size: 20px;
+    padding-bottom: 5px;
+    border: 1px solid #1991ff;
+    background-color: #1991ff;
+    border-radius: 5px;
+    color: white;
+    padding-left: 5px;
+    padding-top: 3px;
+    text-align: center;
+}
+
+.ps_specs table tr th{
+    text-align: left;
+}
+
+.ps_specs table tr td{
+    text-align: left;
+    padding: 2px 10px 2px 100px;
+}
+
+.ps_specs{
+    line-height: 30px;
+}
+
+.ps a button{
+    padding: 10px;
+    margin-top: 5px;
+    border: 1px solid gray;
+    border-radius: 5px;
+    margin-left: 35%;
+}
+
+.ps a button:hover{
+    background-color: #1991ff;
+    border-radius: 5px;
+    border: 1px solid #1991ff;
+    color: white;
+}
+/* End Phone Showcase */
+
+/* Start Recommended Phones */
+.rec_ph{
+    display: grid;
+    grid-template-columns: auto auto auto;
+    grid-column-gap: 30px;
+    padding: 30px 50px 50px 50px;
+}
+
+.rec_ph img{
+    width: 50%;
+}
+
+.rec_specs1 img{
+    padding-bottom: 15px;
+}
+
+.rec_header{
+    font-size: 30px;
+    margin-left: 50px;
+    margin-top: 70px;
+}
+
+.rec_specs,.rec_specs1{
+    border: 1px solid none;
+    border-radius: 5px;
+    padding: 20px;
+    box-shadow: 0 1px 11px rgba(0, 0, 0, 0.1);
+}
+
+.rec_specs span,.rec_specs1 span{
+    float: right;
+    color: red;
+    font-size: 20px;
+}
+/* End Recommended Phones */
+
+/* Start Popular Comparison */
+.pop_com_header{
+    font-size: 30px;
+    margin-left: 50px;
+    margin-top: 50px;
+}
+
+.pop_com{
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-gap: 20px;
+    padding: 30px 50px 50px 50px;
+}
+
+.pop_com img{
+    width: 300px;
+    height: 170px;
+    border-radius: 5px;
+}
+
+.pop_com1{
+    border: 1px solid none;
+    border-radius: 5px;
+    padding: 10px;
+    box-shadow: 0 1px 11px rgba(0, 0, 0, 0.1);
+}
+
+.pop_com1 a h3{
+    float: right;
+    width: 50%;
+    text-decoration: none;
+    color: black;
+}
+
+.pop_com1 a h3:hover{
+    color: #1991ff;
+}
+/* End Popular Comparison */
+/* End Home Page */
+
+
