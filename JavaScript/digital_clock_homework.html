@@ -3,36 +3,68 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Digital Clock</title>
+    <title>Clock</title>
+    <style>
+        #clock, #date {
+            font-family: Arial, sans-serif;
+            font-size: 24px;
+            color: #333;
+        }
+    </style>
 </head>
 <body>
-    <h1>Digital Clock</h1>
-    <span id="myHour"></span>
-    <span id="myMinute"></span>
-    <span id="mySecond"></span>
-    <span id="myDate"></span>
-    <span id="timeString"></span>
+    <div id="clock"></div>
+    <div id="date"></div>
 
     <script>
-        var currentDate = new Date();
-
-        function getHour() {
-            var hour = currentDate.getHours();
-            var todayHour = document.getElementById('myHour');
-            todayHour.innerHTML = hour;
-
-            if (hour == 13) {
-                todayHour.innerHTML = ('1');
-            }else if (hour == 14) {
-                todayHour.innerHTML = ('2');
-            }else if (hour == 15) {
-                todayHour.innerHTML = ('3');
-            }e
+        function padWithZero(number) {
+            const str = number.toString();
+            if (str.length < 2) {
+                return '0' + str;
+            } else {
+                return str;
+            }
         }
 
+        function updateClock() {
+            const now = new Date();
 
+            // Time
+            let hours = now.getHours();
+            const minutes = padWithZero(now.getMinutes());
+            const seconds = padWithZero(now.getSeconds());
+            let ampm;
 
-        setInterval(getHour,1);
+            if (hours >= 12) {
+                ampm = 'PM';
+            } else {
+                ampm = 'AM';
+            }
+
+            hours = hours % 12;
+            if (hours === 0) {
+                hours = 12; // the hour '0' should be '12'
+            }
+            const hoursStr = padWithZero(hours);
+
+            const timeString = hoursStr + ':' + minutes + ':' + seconds + ' ' + ampm;
+            document.getElementById('clock').innerText = timeString;
+
+            // Date
+            const dayNames = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"];
+            const dayName = dayNames[now.getDay()];
+
+            const day = padWithZero(now.getDate());
+
+            const dateString = dayName;
+            document.getElementById('date').innerText = dateString;
+        }
+
+        setInterval(updateClock, 1000);
+        updateClock(); // Initial call to display the clock immediately
     </script>
 </body>
 </html>
+
+
+
