@@ -16,10 +16,12 @@
 .nav_menu a img{
     position: absolute;
     width: 200px;
-    margin-left: 44%;
+    margin-left: 50%;
     padding-top: 10px;
     text-align: center;
+    transform: translate(-50%);
 }
+
 .nav_item ul{
     list-style-type: none;
     text-align: right;
@@ -38,7 +40,7 @@
 }
 
 .nav_item ul li:nth-child(4),.nav_item ul li:nth-child(5),.nav_item ul li:nth-child(6){
-    padding-right: 110px;
+    padding-right: 120px;
     text-transform: uppercase;
 }
 
