@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Event Lesson</title>
+</head>
+<body>
+    <h1>Event Function</h1>
+
+    <img src="Image/TenZ.jpg" id="myImage" width="300px" height="300px" onmouseenter="big()" onmouseout="normal()">
+
+    <br><br>
+    <input type="text" id="myInput" onchange="showData()">
+    <p id="myResult"></p>
+    <script>
+        // onmouseover
+        // onmouseenter
+
+        // onmousedown
+        // onclick
+
+        // onmouseleave
+        // onmouseout
+
+        // onkeyup
+        // onkeydown
+        // onchange
+        function big() {
+            let myImage = document.getElementById('myImage');
+            myImage.style.width = "500px";
+            myImage.style.height = "500px";
+        }
+
+        function normal() {
+            let myImage = document.getElementById('myImage');
+            myImage.style.width = "300px";
+            myImage.style.height = "300px";
+        }
+
+        function showData() {
+            let myInput = document.getElementById('myInput');
+            let myData = myInput.value;
+            document.getElementById('myResult').innerHTML = myData;
+        }
+    </script>
+</body>
+</html>

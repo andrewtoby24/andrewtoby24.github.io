@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Daily Usage</title>
+</head>
+<body>
+    <h1 style="color: blue; text-align: center;">Daily Usage</h1>
+    <form action="" name="dailyUsage">
+        <label for="">Date</label>
+        <input type="date" name="date"> <br>
+        <label for="">Item Name</label>
+        <input type="text" name="name"> <br>
+        <label for="">Price</label>
+        <input type="number" name="price"> <br>
+        <button type="button" onclick="showData()">Calculate</button>
+    </form>
+
+    <h1>Total Daily Usage</h1>
+    <table border="1" callspacing="0" cellpadding="10">
+        <thead>
+            <tr>
+                <th>Date</th>
+                <th>Item Name</th>
+                <th>Price</th>
+            </tr>
+        </thead>
+        <tbody id="myBody">
+
+        </tbody>
+        <tfoot>
+            <tr>
+                <th colspan="2">Total</th>
+                <th id="Total"></th>
+            </tr>
+        </tfoot>
+    </table>
+
+    <script>
+    var dailyArray = [];
+    function showData() {
+    // get daily usage data
+    let date = document.dailyUsage.date.value;
+    let name = document.dailyUsage.name.value;
+    let price = parseInt(dailyUsage.price.value);
+
+    let daily={
+        daily_date : date,
+        daily_name : name,
+        daily_price : price
+    }
+
+    // array push
+    dailyArray.push(daily);
+    // console.log(dailyArray)
+
+    // show Data Table
+    getData();
+
+    }
+ 
+    function getData() {
+        let total = 0;
+        let html = ``;
+        for (let i = 0; i < dailyArray.length; i++) {
+            let dailyObj = dailyArray[i];
+
+            html += `<tr>
+                        <td>${dailyObj.daily_date}</td>
+                        <td>${dailyObj.daily_name}</td>
+                        <td>${dailyObj.daily_price}</td>
+                     </tr>`;
+            total += dailyObj.daily_price;
+        }
+        document.getElementById(`myBody`).innerHTML = html;
+        document.getElementById(`Total`).innerText = `${total}`;
+    }
+
+   
+
+
+    </script>
+</body>
+</html>
