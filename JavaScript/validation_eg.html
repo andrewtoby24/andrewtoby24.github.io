@@ -27,47 +27,43 @@
             if(email == "" && password == "") {
                 let emailError = document.getElementById('email');
                 let emailErrorMessage = document.getElementById('emailErrorMessage');
-                emailError.style.border = "1px solid red";
-                emailErrorMessage.innerHTML = "Please Fill Your Email!";
-                emailErrorMessage.style.color = "red";
-                emailErrorMessage.style.margin = "0px";
+                emailError.setAttribute = ('style', 'border: 1px solid red;');
+                emailErrorMessage.innerText = "Please Fill Your Email!";
+                emailErrorMessage.setAttribute = ('style','color: red;');
+                emailErrorMessage.setAttribute = ('style','margin: 0px;');
 
                 let passwordError = document.getElementById('password');
                 let passwordErrorMessage = document.getElementById('passwordErrorMessage');
-                passwordError.style.border = "1px solid red";
-                passwordErrorMessage.innerHTML = "Please Fill Your Password!";
-                passwordErrorMessage.style.color = "red";
-                passwordErrorMessage.style.margin = "0px";
+                passwordError.setAttribute = ('style', 'border: 1px solid red;');
+                passwordErrorMessage.innerText = "Please Fill Your Password!";
+                passwordErrorMessage.setAttribute = ('style','color: red;');
+                passwordErrorMessage.setAttribute = ('style','margin: 0px;');
                 return false;
             }else if(email != "" && password == "") {
                 let emailError = document.getElementById('email');
                 let emailErrorMessage = document.getElementById('emailErrorMessage');
-                emailError.style.border = "1px solid black";
-                emailErrorMessage.innerHTML = "";
-                emailErrorMessage.style.color = "red";
-                emailErrorMessage.style.margin = "0px";
+                emailError.removeAttribute('border');
+                emailErrorMessage.removeAttribute('color');
 
                 let passwordError = document.getElementById('password');
                 let passwordErrorMessage = document.getElementById('passwordErrorMessage');
-                passwordError.style.border = "1px solid red";
-                passwordErrorMessage.innerHTML = "Please Fill Your Password!";
-                passwordErrorMessage.style.color = "red";
-                passwordErrorMessage.style.margin = "0px";
+                passwordError.setAttribute = ('style', 'border: 1px solid red;');
+                passwordErrorMessage.innerText = "Please Fill Your Password!";
+                passwordErrorMessage.setAttribute = ('style','color: red;');
+                passwordErrorMessage.setAttribute = ('style','margin: 0px;');
                 return false;
             }else if(email == "" && password != "") {
                 let emailError = document.getElementById('email');
                 let emailErrorMessage = document.getElementById('emailErrorMessage');
                 emailError.style.border = "1px solid red";
-                emailErrorMessage.innerHTML = "Please Fill Your Email!";
+                emailErrorMessage.innerText = "Please Fill Your Email!";
                 emailErrorMessage.style.color = "red";
                 emailErrorMessage.style.margin = "0px";
 
                 let passwordError = document.getElementById('password');
                 let passwordErrorMessage = document.getElementById('passwordErrorMessage');
-                passwordError.style.border = "1px solid black";
-                passwordErrorMessage.innerHTML = "";
-                passwordErrorMessage.style.color = "red";
-                passwordErrorMessage.style.margin = "0px";
+                passwordError.removeAttribute('border');
+                passwordErrorMessage.removeAttribute('color');
                 return false;
             }else {
                 return true;
