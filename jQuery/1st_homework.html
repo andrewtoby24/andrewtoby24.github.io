@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animation Homework 1</title>
+    <style>
+        #panel{
+            max-width: 250px;
+            padding: 50px 0px;
+            background-color: black;
+            color: white;
+            text-align: center;
+            position: relative;
+        }
+    </style>
+</head>
+<body>
+    <p id="panel">Animation</p>
+    <button id="start_btn">Start Animation</button>
+
+    <script src="jquery-3.7.1.min.js"></script>
+
+    <script>
+        $(document).ready(function(){
+            $('#start_btn').click(function(){
+                $('#panel').animate({left:'400px'},4000);
+                $('#panel').animate({top:'400px'},4000);
+                $('#panel').animate({left:'400px'},4000);
+                $('#panel').animate({top:'400px'},4000);
+            })
+
+        })
+    </script>
+</body>
+</html>

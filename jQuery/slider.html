@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Slider HTML</title>
+    <style>
+        #click_me{
+            max-width: 250px;
+            background-color: black;
+            color: white;
+            text-align: center;
+            padding: 5px 0px;
+            margin-bottom: 0px;
+            cursor: pointer;
+        }
+
+        #panel{
+            max-width: 250px;
+            background-color: black;
+            color: white;
+            text-align: center;
+            padding: 50px 0px;
+            margin-top: 0px;
+            /* display: none;  Need Only for slideDown */
+        }
+    </style>
+</head>
+<body>
+    <p id="click_me">Click Me</p>
+    <p id="panel">You are Gay</p>
+    <script src="jquery-3.7.1.min.js"></script>
+
+    <script>
+        $(document).ready(function(){
+            $('#click_me').click(function(){
+                // $('#panel').slideDown();
+                // $('#panel').slideUp();
+                $('#panel').slideToggle();
+            })
+        })
+    </script>
+</body>
+</html>
