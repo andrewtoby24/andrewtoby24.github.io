@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Class Lesson</title>
+
+    <style>
+        .trip{
+            background-color: blue;
+            max-width: 250px;
+            padding: 50px 0px;
+            color: white;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <p class="p_class">I want to go Trip!</p>
+
+    <button id="add_class">Add Class</button>
+    <button id="remove_class">Remove Class</button>
+    <button id="toggle_class">Toggle Class</button>
+
+    <script src="jquery-3.7.1.min.js"></script>
+
+    <script>
+        $(document).ready(function(){
+            $('#add_class').click(function(){
+                $('p').addClass('trip');
+            })
+
+            $('#remove_class').click(function(){
+                $('p').removeClass('trip');
+            })
+
+            $('#toggle_class').click(function(){
+                $('p').toggleClass('trip');
+            })
+        })
+
+        
+    </script>
+</body>
+</html>
