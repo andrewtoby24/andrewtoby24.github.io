@@ -20,6 +20,7 @@
                 <br><br>
         <button type="button" id="button">Add</button>
     </div>
+    <br><br>
 
     <table border="1" cellpadding="20" cellspacing="0">
         <thead>
@@ -29,6 +30,7 @@
                 <th>Email</th>
                 <th>Phone</th>
                 <th>Year</th>
+                <th>Action</th>
             </tr>
         </thead>
         <tbody id="tbody">
@@ -40,7 +42,37 @@
 
     <script>
         $(document).ready(function(){
+            getData();
+            function getData (){
+                let getStuString = localStorage.getItem('students');
+                if(getStuString) {
+                    showStuArray = JSON.parse(getStuString);
+                    console.log(showStuArray);
+
+                    // $.each(array,function(key,value){})
+                    let data = '';
+                    let j = 1 ;
+                    $.each(showStuArray, function(i, v) {
+                        // console.log("This is key", i );
+                        // console.log(v.stu_name);
+                        data += `<tr>
+                                 <td>${j++}</td>
+                                 <td>${v.stu_name}</td>
+                                 <td>${v.stu_email}</td>
+                                 <td>${v.stu_phone}</td>
+                                 <td>${v.stu_year}</td>
+                                 <td>
+                                    <button class = "edit"> Edit </button>
+                                    <button class = "delete" data-key="${i}"> Delete </button>
+                                 </td>
+                                 </tr>`
+                    })
+                    $('#tbody').html(data);                   
+                }
+            }
+
             $('#button').click(function(){
+
                 let name = $('#name').val();
                 let email = $('#email').val();
                 let phone = $('#phone').val();
@@ -63,15 +95,13 @@
                 // U - Update
                 // D - Delete
 
-                let stuString = localStorage.getItem('sudents'); // get local storage data
+                let stuString = localStorage.getItem('students'); // get local storage data
                 let stuArray = [];
                 if(stuString == null) {
                     stuArray = [];
                 }else{
                     stuArray = JSON.parse(stuString); // json string to array
-                }
-
-                console.log(stuArray);
+                };
 
                 stuArray.push(students);
                 console.log(stuArray);
@@ -80,9 +110,31 @@
                 // console.log(studentData);
                 localStorage.setItem('students', studentData); // set data to the local storage
                 
-                
+                getData();
+            })
+
+            $('#tbody').on('click','.delete',function(){
+                let key = $(this).data('key');
+                // alert(key);
+                let ans = confirm("Are you sure you want to delete?");
+                // alert(ans);
+                if(ans == true){
+                    let getStuString = localStorage.getItem('students');
+                    if(getStuString) {
+                        let stuArr = JSON.parse(getStuString);
+                        // console.log(stuArr);
+                        stuArr.splice(key,1);  // splice is like 'pop' in JavaScript (index No, Index room amount that you want to delete)
+                        // console.log(stuArr);
+                        let studentData =  JSON.stringify(stuArr);  
+                        localStorage.setItem('students', studentData); // set the deleting data into the local storage for new string or new value
+
+                        getData(); // function to show live data after clicking the button
+ 
+                    }
+                }
             })
         })
+
     </script>
 
 </body>
