@@ -6,8 +6,8 @@
     <title>Student Registration</title>
 </head>
 <body>
-    <div>
-        <h1>Student Registration</h1>
+    <div id="add_student">
+        <h1>Add Student Registration</h1>
         Name: <input type="text" name="name" id="name"><br><br>
         Email: <input type="email" name="email" id="email"><br><br>
         Phone: <input type="phone" name="phone" id="phone"><br><br>
@@ -19,6 +19,22 @@
                 </select>
                 <br><br>
         <button type="button" id="button">Add</button>
+    </div>
+    <br><br>
+
+    <div id="edit_student">
+        <h1>Update Student Registration</h1>
+        Name: <input type="text" name="name" id="edit_name"><br><br>
+        Email: <input type="email" name="email" id="edit_email"><br><br>
+        Phone: <input type="phone" name="phone" id="edit_phone"><br><br>
+        Year:   <select name="year" id="edit_year">
+                    <option value="">Choose Year</option>
+                    <option value="First">First Year</option>
+                    <option value="Second">Second Year</option>
+                    <option value="Third">Third Year</option>
+                </select>
+                <br><br>
+        <button type="button" id="update">Update</button>
     </div>
     <br><br>
 
@@ -42,7 +58,8 @@
 
     <script>
         $(document).ready(function(){
-            getData();
+            getData(); // call the function for showing the data from the local storage after refresh the defult browser
+            $('#edit_student').hide(); // hide the edit or update student form for user interface
             function getData (){
                 let getStuString = localStorage.getItem('students');
                 if(getStuString) {
@@ -52,7 +69,7 @@
                     // $.each(array,function(key,value){})
                     let data = '';
                     let j = 1 ;
-                    $.each(showStuArray, function(i, v) {
+                    $.each(showStuArray, function(i, v) {   // key = i , value = v
                         // console.log("This is key", i );
                         // console.log(v.stu_name);
                         data += `<tr>
@@ -62,12 +79,12 @@
                                  <td>${v.stu_phone}</td>
                                  <td>${v.stu_year}</td>
                                  <td>
-                                    <button class = "edit"> Edit </button>
-                                    <button class = "delete" data-key="${i}"> Delete </button>
+                                    <button class = "edit" data-key="${i}" data-name="${v.stu_name}" data-email="${v.stu_email}" data-phone="${v.stu_phone}" data-year="${v.stu_year}"> Edit </button>
+                                    <button class = "delete" data-key="${i}"> Delete </button>  
                                  </td>
                                  </tr>`
                     })
-                    $('#tbody').html(data);                   
+                    $('#tbody').html(data);                   // data-key = value; 
                 }
             }
 
@@ -114,9 +131,9 @@
             })
 
             $('#tbody').on('click','.delete',function(){
-                let key = $(this).data('key');
+                let key = $(this).data('key');  // call the data from the table row that you click the delete button or the unique id called 'key' in line 66
                 // alert(key);
-                let ans = confirm("Are you sure you want to delete?");
+                let ans = confirm("Are you sure you want to delete?"); // confirmation box for user confirm
                 // alert(ans);
                 if(ans == true){
                     let getStuString = localStorage.getItem('students');
@@ -132,6 +149,20 @@
  
                     }
                 }
+            })
+
+            $('tbody').on('click','.edit',function(){
+                let key = $(this).data('key');
+                let name = $(this).data('name');    // get the data from the local storage for showin the data back to the user in the student update form
+                let email = $(this).data('email');
+                let phone = $(this).data('phone');
+                let year = $(this).data('year');
+
+                console.log(key, name, email, phone, year);
+                
+                // alert(key);
+                $('#add_student').hide();  // hide and show function for two forms
+                $('#edit_student').show();
             })
         })
 
