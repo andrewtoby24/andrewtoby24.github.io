@@ -24,6 +24,7 @@
 
     <div id="edit_student">
         <h1>Update Student Registration</h1>
+        <input type="hidden" name="" id="edit_key">
         Name: <input type="text" name="name" id="edit_name"><br><br>
         Email: <input type="email" name="email" id="edit_email"><br><br>
         Phone: <input type="phone" name="phone" id="edit_phone"><br><br>
@@ -163,6 +164,39 @@
                 // alert(key);
                 $('#add_student').hide();  // hide and show function for two forms
                 $('#edit_student').show();
+
+                $('#edit_key').val(key);
+                $('#edit_name').val(name);  // putting back the local storage values into the update form 
+                $('#edit_email').val(email);
+                $('#edit_phone').val(phone);
+                $('#edit_year').val(year);
+            })
+
+            $('#update').click(function(){
+                let key = $('#edit_key').val();
+                let name = $('#edit_name').val();
+                let email = $('#edit_email').val();
+                let phone = $('#edit_phone').val();
+                let year = $("#edit_year").val();
+
+                let stuString = localStorage.getItem('students');
+                if (stuString) {
+                    let stuArray = JSON.parse(stuString);
+                    console.log(stuArray[key]);
+                    stuArray[key].stu_name = name;
+                    stuArray[key].stu_email = email;
+                    stuArray[key].stu_phone = phone;
+                    stuArray[key].stu_year = year;
+                    
+                    let studentData = JSON.stringify(stuArray);
+                    localStorage.setItem('students', studentData);
+
+                    getData();
+
+                    $('#edit_student').hide();
+                    $('#add_student').show();
+                    
+                }
             })
         })
 
