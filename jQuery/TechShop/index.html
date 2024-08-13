@@ -13,7 +13,8 @@
         <h2>IT Shop</h2>
         <div class="nav_menu">
             <a href="index.html">Home</a>
-            <button><i class="fa-solid fa-cart-plus fa-lg"></i></button>
+            <span id="count_item"></span>
+            <a href="check_out.html"><i class="fa-solid fa-cart-plus fa-lg cart"></i></a>
         </div>
     </header>
     <!-- Navigation Bar End -->
@@ -26,15 +27,15 @@
             </div>
             <h3>Samsung Book 4 Ultra</h3>
             <p>Price: 2300000 MMK</p>
-            <button>Add to Cart</button>
+            <button class="addToCart" data-id="1" data-name="Samsung Book 4 Ultra" data-price="2300000" type="button">Add to Cart</button>
         </div>
         <div class="items_grid">
             <div>
                 <img src="images/Samsung Book 4 Edge.jpg" alt="">
             </div>
             <h3>Samsung Galaxy Book 4 Edge</h3>
-            <p>Price: 2300000 MMK</p>
-            <button>Add to Cart</button>
+            <p>Price: 2000000 MMK</p>
+            <button class="addToCart" data-id="2" data-name="Samsung Galaxy Book 4 Edge" data-price="2000000">Add to Cart</button>
         </div>
         <div class="items_grid">
             <div>
@@ -87,5 +88,7 @@
     </div>
 
     <script src="fontawesome-free-6.6.0-web/js/all.min.js"></script>
+    <script src="jquery-3.7.1.min.js"></script>
+    <script src="scripts.js"></script>
 </body>
 </html>
