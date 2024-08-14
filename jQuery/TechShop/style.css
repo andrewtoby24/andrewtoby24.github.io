@@ -100,13 +100,14 @@ header h2 {
     padding: 10px;
 }
 
-.order_now :hover {
-    background-color: green;
+.order_now:hover {
+    background-color: black;
 }
 
 .cart {
     position: relative;
 }
+
 #count_item {
     font-size: small;
     background-color: red;

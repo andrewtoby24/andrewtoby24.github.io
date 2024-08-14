@@ -14,7 +14,11 @@ $(document).ready(function(){
             data += `<tr>
                         <td>${j++}</td>
                         <td>${v.name}</td>
-                        <td><button>-</button>${v.qty}<button>+</button></td>
+                        <td>
+                        <button class="min" data-key="${i}">-</button>
+                        ${v.qty}
+                        <button class="max" data-max=${i}>+</button>
+                        </td>
                         <td>${v.price}</td>
                         <td>${v.price * v.qty}</td>
                     </tr>`
@@ -34,7 +38,7 @@ $(document).ready(function(){
         let itemString = localStorage.getItem('shops');
         if(itemString) {
             let itemArray = JSON.parse(itemString);
-            if(itemArray != 0) {
+            if(itemArray != null) {
                 let count = itemArray.length;
                 $('#count_item').text(count);
             }
@@ -79,5 +83,57 @@ $(document).ready(function(){
         localStorage.setItem('shops', itemsData);
         
         count();
+    })
+
+    $('#tbody').on('click','.min',function (){
+        let key = $(this).data('key');
+        // alert(key);
+        let itemsString = localStorage.getItem('shops');
+        if(itemsString){
+            let itemsArray = JSON.parse(itemsString);
+
+            $.each(itemsArray, function(i,v){
+                if(i == key){
+                    v.qty--;
+                    if(v.qty == 0) {
+                        itemsArray.splice(key, 1) // splice(start, number);
+                    }
+                }
+            });
+
+            let itemsData = JSON.stringify(itemsArray);
+            localStorage.setItem('shops', itemsData);
+
+            getItemsData();
+        }
+    })
+
+    $('#tbody').on('click','.max',function (){
+        let max = $(this).data('max');
+        // alert(key);
+        let itemsString = localStorage.getItem('shops');
+        if(itemsString){
+            let itemsArray = JSON.parse(itemsString);
+
+            $.each(itemsArray, function(i,v){
+                if(i == max){
+                    v.qty++;
+                }
+            });
+
+            let itemsData = JSON.stringify(itemsArray);
+            localStorage.setItem('shops', itemsData);
+
+            getItemsData();
+        }
+    })
+
+    $(".order_now").click(function(){
+        let ans = confirm('Are you sure Check Out?');
+        // console.log(ans);
+        if(ans){
+            localStorage.removeItem('shops');
+            window.location.href = "index.html";
+        }
     })
 })
