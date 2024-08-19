@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>Music Wave Javascript</title>
+    <script src="https://unpkg.com/wavesurfer.js@7"></script>
+</head>
+<body class="p-0 m-0 font-mono">
+
+    <div class="w-full h-screen bg-[#1991ff] flex items-center justify-center">
+        <div class="w-[90%] max-w-[900px] p-8 shadow-lg bg-white rounded-lg">
+            <p class="pb-2">Artist : Tommy Richman</p>
+            <h1 class="font-bold text-3xl">Million Dollar Baby</h1>
+            <hr class="my-3">
+            <div class="flex items-center mt-2">
+                <img src="https://static.vecteezy.com/system/resources/thumbnails/035/753/221/small_2x/video-play-button-icon-for-graphic-design-logo-web-site-social-media-mobile-app-ui-illustration-png.png" id="playBtn" class="w-[10%] mt-5 cursor-pointer mr-5">
+                <div id="waveform" class="flex-grow items-center"></div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        var playBtn = document.getElementById("playBtn");
+
+        const wavesurfer = WaveSurfer.create({
+            container: '#waveform',
+            waveColor: '#1991ff',
+            progressColor: '#ff006c',
+            barWidth: 4,
+            responsive: true,
+            height: 90,
+            barRadius: 4,
+            url: 'Music/Million Dollar Baby.mp3',
+        })
+
+        wavesurfer.load('Music/Million Dollar Baby.mp3');
+
+        playBtn.onclick = function () {
+            wavesurfer.playPause();
+            if(playBtn.src.includes('https://static.vecteezy.com/system/resources/thumbnails/035/753/221/small_2x/video-play-button-icon-for-graphic-design-logo-web-site-social-media-mobile-app-ui-illustration-png.png')) {
+                playBtn.src = "https://cdn-icons-png.flaticon.com/512/61/61180.png";
+            }else{
+                playBtn.src = "https://static.vecteezy.com/system/resources/thumbnails/035/753/221/small_2x/video-play-button-icon-for-graphic-design-logo-web-site-social-media-mobile-app-ui-illustration-png.png";
+            }
+        }
+
+        wavesurfer.on('finish', function(){
+            playBtn.src = "https://static.vecteezy.com/system/resources/thumbnails/035/753/221/small_2x/video-play-button-icon-for-graphic-design-logo-web-site-social-media-mobile-app-ui-illustration-png.png";
+            wavesurfer.stop();
+        })
+
+
+    </script>
+</body>
+</html>
