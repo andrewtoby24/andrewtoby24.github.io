@@ -6,3 +6,28 @@
 *{
     font-family: "WorkSans";
 }
+
+/* navbar start */
+.active_page{
+    color: red !important;
+}
+
+.nav-link:hover{
+    color: red !important;
+}
+/* navbar end */
+
+/* start carousel */
+.carousel_text {
+    top: 35%;
+    left: 10%;
+}
+/* end carousel */
+
+/* start course banner */
+.red_dot{
+    display: inline-block;
+    background-color: red;
+    border-radius: 50%;
+    border: 1;
+}
