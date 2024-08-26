@@ -1,0 +1,20 @@
+@font-face {
+    font-family: "Raleway";
+    src: url(../Fonts/Raleway/Raleway-VariableFont_wght.ttf);
+}
+
+*{
+    font-family: "Raleway";
+}
+
+.nav-link:hover{
+    color: orange !important;
+}
+
+.dropdown-item:hover{
+    color: orange !important;
+}
+
+.header{
+    background-image: url(../Images/BG\ img.png);
+}
