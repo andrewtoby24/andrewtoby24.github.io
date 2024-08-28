@@ -1,3 +1,4 @@
+/* Declare Offline Font */
 @font-face {
     font-family: "Raleway";
     src: url(../Fonts/Raleway/Raleway-VariableFont_wght.ttf);
@@ -6,15 +7,43 @@
 *{
     font-family: "Raleway";
 }
+/* End Declare Offline Font */
 
-.nav-link:hover{
-    color: orange !important;
+/* Navbar Start */
+.nav-btn:hover{
+    color: red !important;
 }
 
 .dropdown-item:hover{
-    color: orange !important;
+    color: red !important;
+}
+/* Navbar End */
+
+/* Header Start */
+.header{
+    background-image: url(../Images/Background\ Header.jpg);
+    min-height: 500px;
+    background-position: 50% 50%;
+    background-size: cover ;
 }
 
-.header{
-    background-image: url(../Images/BG\ img.png);
+.header-nav .active{
+    color: red !important;
+    background-color: transparent !important;
+}
+
+.header-nav .active ::after{
+    background-color: red;
+}
+
+.song-small{
+    background: rgb(66,65,83);
+    background: linear-gradient(90deg, rgba(66,65,83,0.7399334733893557) 0%, rgba(57,57,60,1) 50%, rgba(63,62,82,0.7091211484593838) 100%);
+    transition: all 0.3s ease;
+}
+
+.song-small:hover{
+    border: solid thin white;
+    cursor: pointer;
+    transform: translateY(-5px);
 }
