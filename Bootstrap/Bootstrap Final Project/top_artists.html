@@ -7,50 +7,242 @@
     <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
     <link rel="stylesheet" href="./Fonts/fontawesome-free-6.6.0-web/css/all.min.css">
     <link rel="stylesheet" href="Custom CSS/custom.css">
-    <title>Top Artists</title>
+    <title>Echo Play</title>
 </head>
 <body>
     <!-- Navbar Start -->
-    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+    <nav class="navbar navbar-expand-lg bg-body-tertiary ps-xl-5 pe-xl-5 mainnav">
         <div class="container-fluid">
-          <a class="navbar-brand" href="#"><img src="Images/EchoPlay Logo.png" alt=""></a>
+          <a class="navbar-brand" href="#"><img src="Images/EchoPlay Logo.png" alt="" class="w-75 w-md-75"></a>
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
           </button>
           <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav me-auto mb-2 mb-lg-0 ms-auto">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0 ms-auto nav_bar">
               <li class="nav-item pe-5 fw-bold">
-                <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+                <a class="nav-link active text-dark nav-btn" aria-current="page" href="index.html">Home</a>
               </li>
               <li class="nav-item pe-5 fw-bold">
-                <a class="nav-link" href="#">Link</a>
+                <a class="nav-link text-dark nav-btn" href="#">Discover</a>
+              </li>
+              <li class="nav-item pe-5">
+                <a class="nav-link aria-current=page fw-bold text-dark nav-btn" href="#" >New Release</a>
               </li>
               <li class="nav-item dropdown pe-5 fw-bold">
-                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                <a class="nav-link dropdown-toggle text-dark nav-btn" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                   Top Picks
                 </a>
-                <ul class="dropdown-menu">
+                <ul class="dropdown-menu text-dark">
                   <li><a class="dropdown-item" href="top_artists.html">Top Artists</a></li>
                   <li><a class="dropdown-item" href="top_songs.html">Top Songs</a></li>
                   <li><a class="dropdown-item" href="chart.html">Charts</a></li>
                 </ul>
               </li>
-              <li class="nav-item pe-5">
-                <a class="nav-link aria-current=page" href="#" ><i class="fa-solid fa-user"></i></a>
-              </li>
             </ul>
             <form class="d-flex" role="search">
-              <input class="form-control me-2" type="search" placeholder="Any Song?" aria-label="Search">
-              <button class="btn btn-outline-warning" type="submit">Search</button>
+                <button class="btn btn-outline-danger me-2" type="button">Register</button>
+                <button class="btn btn-outline-danger" type="button">Log In</button>
             </form>
           </div>
         </div>
       </nav>
       <!-- Navbar End -->
 
-      <div>
-        <div class="text-center">
-          <img src="Images/Architype Van Der Leck.png" alt="">
+      <!-- Header Start -->
+      <div class="header text-light p-4">
+        <ul class="nav nav-pills mb-3 header-nav" id="pills-tab" role="tablist">
+          <li class="nav-item" role="presentation">
+            <button class="text-light nav-link active id="pills-home-tab" data-bs-toggle="pill" data-bs-target="#pills-home" type="button" role="tab" aria-controls="pills-home" aria-selected="true">Featured</button>
+          </li>
+          <li class="nav-item" role="presentation">
+            <button class="text-light nav-link" id="pills-profile-tab" data-bs-toggle="pill" data-bs-target="#pills-profile" type="button" role="tab" aria-controls="pills-profile" aria-selected="false">Trending</button>
+          </li>
+          <li class="nav-item" role="presentation">
+            <button class="text-light nav-link" id="pills-contact-tab" data-bs-toggle="pill" data-bs-target="#pills-contact" type="button" role="tab" aria-controls="pills-contact" aria-selected="false">New Release</button>
+          </li>
+        </ul>
+        <div class="tab-content pt-2 ps-3" id="pills-tabContent">
+          <div class="tab-pane fade show active" id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab" tabindex="0">
+            <!-- Songs Items -->
+            <div class="col-lg-6 row align-items-center p-2 song-small rounded mb-2">
+              <div class="col-1">
+                <h2>1</h2>
+              </div>
+              <div class="col d-flex">
+                <img src="Images/pone yape.jpeg" alt="" style="width: 50px; height: 50px;" class="rounded me-2">
+                <div>
+                  <div>Ngwe La Min Lay</div>
+                  <small>Pone Yape</small>
+                </div>
+              </div>
+              <div class="col-2">04:26 <i class="fa-solid fa-play ms-3"></i></div>
+            </div>
+            <!-- Song Items -->
+
+             <!-- Songs Items -->
+            <div class="col-lg-6 row align-items-center p-2 song-small rounded mb-2">
+              <div class="col-1">
+                <h2>2</h2>
+              </div>
+              <div class="col d-flex">
+                <img src="Images/Est ce que tu m'aimes GIMS.jpeg" alt="" style="width: 50px; height: 50px;" class="rounded me-2">
+                <div>
+                  <div>Est ce que tu m'aimes</div>
+                  <small>Maitre Gims</small>
+                </div>
+              </div>
+              <div class="col-2">04:02 <i class="fa-solid fa-play ms-3"></i></div>
+            </div>
+            <!-- Song Items -->
+
+            <!-- Songs Items -->
+            <div class="col-lg-6 row align-items-center p-2 song-small rounded mb-2">
+              <div class="col-1">
+                <h2>3</h2>
+              </div>
+              <div class="col d-flex">
+                <img src="Images/big dawgs hanumankind.jpeg" alt="" style="width: 50px; height: 50px;" class="rounded me-2">
+                <div>
+                  <div>Big Dawgs</div>
+                  <small>Hanumankind</small>
+                </div>
+              </div>
+              <div class="col-2">04:26 <i class="fa-solid fa-play ms-3"></i></div>
+            </div>
+            <!-- Song Items -->
+
+             <!-- Songs Items -->
+            <div class="col-lg-6 row align-items-center p-2 song-small rounded mb-2">
+              <div class="col-1">
+                <h2>4</h2>
+              </div>
+              <div class="col d-flex">
+                <img src="Images/pone yape.jpeg" alt="" style="width: 50px; height: 50px;" class="rounded me-2">
+                <div>
+                  <div>Ngwe La Min Lay</div>
+                  <small>Neo Image Album</small>
+                </div>
+              </div>
+              <div class="col-2">04:26 <i class="fa-solid fa-play ms-3"></i></div>
+            </div>
+            <!-- Song Items -->
+            
+            <!-- Songs Items -->
+             <div class="col-lg-6 row align-items-center p-2 song-small rounded mb-2">
+              <div class="col-1">
+                <h2>5</h2>
+              </div>
+              <div class="col d-flex">
+                <img src="Images/pone yape.jpeg" alt="" style="width: 50px; height: 50px;" class="rounded me-2">
+                <div>
+                  <div>Ngwe La Min Lay</div>
+                  <small>Neo Image Album</small>
+                </div>
+              </div>
+              <div class="col-2">04:26 <i class="fa-solid fa-play ms-3"></i></div>
+            </div>
+            <!-- Song Items -->
+
+          </div>
+          <div class="tab-pane fade" id="pills-profile" role="tabpanel" aria-labelledby="pills-profile-tab" tabindex="0">
+            <!-- Songs Items -->
+            <div class="col-lg-6 row align-items-center p-2 song-small rounded mb-2">
+              <div class="col-1">
+                <h2>1</h2>
+              </div>
+              <div class="col d-flex">
+                <img src="Images/Est ce que tu m'aimes GIMS.jpeg" alt="" style="width: 50px; height: 50px;" class="rounded me-2">
+                <div>
+                  <div>Est ce que tu m'aimes</div>
+                  <small>Maitre Gims</small>
+                </div>
+              </div>
+              <div class="col-2">04:02 <i class="fa-solid fa-play ms-3"></i></div>
+            </div>
+            <!-- Song Items -->
+
+             <!-- Songs Items -->
+            <div class="col-lg-6 row align-items-center p-2 song-small rounded mb-2">
+              <div class="col-1">
+                <h2>2</h2>
+              </div>
+              <div class="col d-flex">
+                <img src="Images/Espresso_-_Sabrina_Carpenter.png" alt="" style="width: 50px; height: 50px;" class="rounded me-2">
+                <div>
+                  <div>Expresso</div>
+                  <small>Sabrina Carpenter</small>
+                </div>
+              </div>
+              <div class="col-2">04:26 <i class="fa-solid fa-play ms-3"></i></div>
+            </div>
+            <!-- Song Items -->
+
+            <!-- Songs Items -->
+            <div class="col-lg-6 row align-items-center p-2 song-small rounded mb-2">
+              <div class="col-1">
+                <h2>3</h2>
+              </div>
+              <div class="col d-flex">
+                <img src="Images/Tommy_Richman_-_Million_Dollar_Baby.png" alt="" style="width: 50px; height: 50px;" class="rounded me-2">
+                <div>
+                  <div>Million Dollar Baby</div>
+                  <small>Tommy Richman</small>
+                </div>
+              </div>
+              <div class="col-2">04:26 <i class="fa-solid fa-play ms-3"></i></div>
+            </div>
+            <!-- Song Items -->
+
+            <!-- Songs Items -->
+            <div class="col-lg-6 row align-items-center p-2 song-small rounded mb-2">
+              <div class="col-1">
+                <h2>4</h2>
+              </div>
+              <div class="col d-flex">
+                <img src="Images/Avangard - LONOWN.jpeg" alt="" style="width: 50px; height: 50px;" class="rounded me-2">
+                <div>
+                  <div>Avangard</div>
+                  <small>LONOWN</small>
+                </div>
+              </div>
+              <div class="col-2">04:26 <i class="fa-solid fa-play ms-3"></i></div>
+            </div>
+            <!-- Song Items -->
+          </div>
+
+          <div class="tab-pane fade" id="pills-contact" role="tabpanel" aria-labelledby="pills-contact-tab" tabindex="0">
+            <!-- Songs Items -->
+            <div class="col-lg-6 row align-items-center p-2 song-small rounded mb-2">
+              <div class="col-1">
+                <h2>1</h2>
+              </div>
+              <div class="col d-flex">
+                <img src="Images/pone yape.jpeg" alt="" style="width: 50px; height: 50px;" class="rounded me-2">
+                <div>
+                  <div>Ngwe La Min Lay</div>
+                  <small>Pone Yape</small>
+                </div>
+              </div>
+              <div class="col-2">04:26 <i class="fa-solid fa-play ms-3"></i></div>
+            </div>
+            <!-- Song Items -->
+
+            <!-- Songs Items -->
+            <div class="col-lg-6 row align-items-center p-2 song-small rounded mb-2">
+              <div class="col-1">
+                <h2>2</h2>
+              </div>
+              <div class="col d-flex">
+                <img src="Images/big dawgs hanumankind.jpeg" alt="" style="width: 50px; height: 50px;" class="rounded me-2">
+                <div>
+                  <div>Big Dawgs</div>
+                  <small>Hanumankind</small>
+                </div>
+              </div>
+              <div class="col-2">04:26 <i class="fa-solid fa-play ms-3"></i></div>
+            </div>
+            <!-- Song Items -->
+          </div>
         </div>
       </div>
 

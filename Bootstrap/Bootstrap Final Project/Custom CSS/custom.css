@@ -10,12 +10,20 @@
 /* End Declare Offline Font */
 
 /* Navbar Start */
+.mainnav .active{
+    color: red !important;
+}
+
 .nav-btn:hover{
     color: red !important;
 }
 
 .dropdown-item:hover{
     color: red !important;
+}
+
+.regi_btn:hover{
+    color: white;
 }
 /* Navbar End */
 
@@ -43,7 +51,45 @@
 }
 
 .song-small:hover{
-    border: solid thin white;
+    border: solid thin grey;
     cursor: pointer;
     transform: translateY(-5px);
+}
+
+/* Log In form */
+.soc_btn{
+    font-size: 0.8rem;
+    font-weight: 700;
+}
+
+.soc_btn{
+    color: #31374a;
+    border-color: #ddd;
+}
+
+.soc_btn:hover{
+    color: #31374a;
+    border-color: #ddd;
+    background-color: #eee;
+}
+
+.divider-content-center{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+    background-color: white;
+    font-size: 0.8rem;
+    font-weight: 500;
+    color: #999;
+}
+
+.divider{
+    margin: 2rem 0;
+}
+
+.for_psw:hover{
+    text-decoration: underline;
 }
