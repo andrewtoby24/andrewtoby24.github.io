@@ -7,9 +7,9 @@
     <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
     <link rel="stylesheet" href="Fonts/fontawesome-free-6.6.0-web/css/all.min.css">
     <link rel="stylesheet" href="Custom CSS/custom.css">
-    <title>Log In</title>
+    <title>Register</title>
 </head>
-<body style="background-image: url(Images/Log\ In\ Page\ BG\ img.jpg); background-position: 20% 30%; background-repeat: no-repeat; background-size: cover;">
+<body style="background-image: url(Images/Log\ In\ Page\ BG\ img.jpg); background-position: 20% 30%; background-repeat:no-repeat; background-size: cover;">
     <!-- Navbar Start -->
     <nav class="navbar navbar-expand-lg bg-body-tertiary ps-xl-5 pe-xl-5 mainnav">
         <div class="container-fluid">
@@ -50,7 +50,7 @@
 
       <!-- Log In form Start -->
       <div class="container my-5 w-50">
-        <div class="row justify-content-center border rounded py-4 shadow" style="background-color: transparent;  backdrop-filter: blur(20px);"style="background-color: transparent;  backdrop-filter: blur(20px);" accordion>
+        <div class="row justify-content-center border rounded py-4 shadow" style="background-color: transparent;  backdrop-filter: blur(20px);">
           <div class="col-lg-6">
             <!-- Logo -->
             <a href="#" class="d-flex justify-content-center mb-4">
@@ -59,62 +59,69 @@
             <!-- Logo -->
 
             <div class="text-center mb-5">
-              <h3 class="fw-bold">Log In</h3>
-              <p class="text-secondary fw-bold">Get acccess to the Music</p>
+              <h3 class="fw-bold">Register</h3>
+              <p class="text-secondary fw-bold">Create your free account</p>
             </div>
 
-            <!-- Form -->
-            <form action="#">
-              <div class="input-group mb-3">
-                <span class="input-group-text">
-                  <i class="fa-solid fa-user"></i>
-                </span>
-                <input type="text" class="form-control form-control-lg fs-6" placeholder="Username">
-              </div>
-              <div class="input-group mb-3">
-                <span class="input-group-text">
-                  <i class="fa-solid fa-lock"></i>
-                </span>
-                <input type="password" class="form-control form-control-lg fs-6" placeholder="Password">
-              </div>
-              <div class="input-group mb-3 d-flex justify-content-between">
-                <div class="form-check">
-                  <input type="checkbox" class="form-check-input" id="formCheck">
-                  <label for="formCheck" class="form-check-label text-secondary"><small>Remember Me</small></label>
-                </div>
-                <div class="for_psw">
-                  <small><a href="#" class="text-decoration-none">Forgot Password?</a></small>
-                </div>
-              </div>
-              <button class="btn btn-primary btn-lg w-100 mb-4">Login</button>
-            </form>
-            <!-- Form -->
+            <!-- Social Media Log In -->
+            <button class="btn btn-outline-secondary btn-lg w-100 mb-3 soc_btn">
+              <i class="fa-brands fa-google text-danger me-2 fs-6"></i>Continue with Google
+            </button>
+            <button class="btn btn-outline-secondary btn-lg w-100 mb-3 soc_btn">
+              <i class="fa-brands fa-facebook-f text-primary me-2 fs-6"></i>Continue with Facebook
+            </button>
+            <!-- Social Media Log In -->
 
             <!-- Divider -->
             <div class="position-relative">
-              <hr class="text-secondary divider">
-              <div class="divider-content-center">Or</div>
-            </div>
-            <!-- Divider -->
-
-            <!-- Social Media Log In -->
-            <button class="btn btn-outline-secondary btn-lg w-100 mb-3 soc_btn">
-              <i class="fa-brands fa-google text-danger me-2 fs-6"></i>Login with Google
-            </button>
-            <button class="btn btn-outline-secondary btn-lg w-100 mb-3 soc_btn">
-              <i class="fa-brands fa-facebook-f text-primary me-2 fs-6"></i>Login with Facebook
-            </button>
-            <!-- Social Media Log In -->
-
-            <div class="text-center">
-              <small>Don't have an account? <a href="register.html" class="fw-bold text-decoration-none">Sign Up</a></small>
+                <hr class="text-secondary divider">
+                <div class="divider-content-center">Or</div>
+              </div>
+              <!-- Divider -->
+  
+              <!-- Form -->
+              <form action="#">
+                <div class="input-group mb-3">
+                  <span class="input-group-text">
+                    <i class="fa-solid fa-envelope-circle-check"></i>
+                  </span>
+                  <input type="text" class="form-control form-control-lg fs-6" placeholder="Enter your email">
+                </div>
+                <div class="input-group mb-3">
+                  <span class="input-group-text">
+                    <i class="fa-solid fa-user-plus"></i>
+                  </span>
+                  <input type="text" class="form-control form-control-lg fs-6" placeholder="Enter your username">
+                </div>
+                <div class="input-group mb-3">
+                  <span class="input-group-text">
+                    <i class="fa-solid fa-venus-mars"></i>
+                  </span>
+                  <select name="" id="" class="form-select fs-6">
+                    <option value="0">Choose your gender</option>
+                    <option value="1">Male</option>
+                    <option value="2">Female</option>
+                  </select>
+                </div>
+                <div class="input-group mb-3 d-flex justify-content-between">
+                  <div class="form-check">
+                    <input type="checkbox" class="form-check-input" id="formCheck">
+                    <label for="formCheck" class="form-check-label text-secondary"><small>I agree to the <a href="">Terms & Conditions</a></small></label>
+                  </div>
+                </div>
+                <button class="btn btn-primary btn-lg w-100 mb-4">Sign Up</button>
+              </form>
+              <!-- Form -->
+  
+              <div class="text-center">
+                <small>Already have an account? <a href="log_in.html" class="fw-bold text-decoration-none">Log In</a></small>
+              </div>
             </div>
           </div>
         </div>
-      </div>
-      <!-- Log In form End -->
-
-    <script src="Fonts/fontawesome-free-6.6.0-web/js/all.min.js"></script>
-    <script src="bootstrap/js/bootstrap.bundle.min.js"></script>
-</body>
-</html>
+        <!-- Log In form End -->
+  
+      <script src="Fonts/fontawesome-free-6.6.0-web/js/all.min.js"></script>
+      <script src="bootstrap/js/bootstrap.bundle.min.js"></script>
+  </body>
+  </html>

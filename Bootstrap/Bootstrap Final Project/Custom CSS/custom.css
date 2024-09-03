@@ -93,3 +93,8 @@
 .for_psw:hover{
     text-decoration: underline;
 }
+
+.card{
+    background: rgb(66,65,83);
+    background: linear-gradient(90deg, rgba(66,65,83,0.7399334733893557) 0%, rgba(57,57,60,1) 50%, rgba(63,62,82,0.7091211484593838) 100%);
+}
