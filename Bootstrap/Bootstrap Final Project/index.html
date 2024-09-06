@@ -11,7 +11,7 @@
 </head>
 <body>
     <!-- Navbar Start -->
-    <nav class="navbar navbar-expand-lg bg-body-tertiary ps-xl-5 pe-xl-5 mainnav">
+    <nav class="navbar navbar-expand-lg bg-body-tertiary ps-xl-5 pe-xl-5 mainnav sticky-top shadow-lg">
         <div class="container-fluid">
           <a class="navbar-brand" href="#"><img src="Images/EchoPlay Logo.png" alt="" class="w-75 w-md-75"></a>
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -28,6 +28,9 @@
               <li class="nav-item pe-5">
                 <a class="nav-link aria-current=page fw-bold text-dark nav-btn" href="#" >New Release</a>
               </li>
+              <li class="nav-item pe-5">
+                <a class="nav-link aria-current=page fw-bold text-dark nav-btn" href="Pricing.html" >Pricing</a>
+              </li>
               <li class="nav-item dropdown pe-5 fw-bold">
                 <a class="nav-link dropdown-toggle text-dark nav-btn" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                   Top Picks
@@ -39,6 +42,18 @@
                 </ul>
               </li>
             </ul>
+            <div class="dropdown me-2 mb-3 mb-md-0">
+              <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                <i class="fa-solid fa-globe me-1"></i>English
+              </button>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#">English (English)</a></li>
+                <li><a class="dropdown-item" href="#">Deutsch (German)</a></li>
+                <li><a class="dropdown-item" href="#">Ελληνικά (Greek)</a></li>
+                <li><a class="dropdown-item" href="#">Français (French)</a></li>
+                <li><a class="dropdown-item" href="#">普通话 (Mandarin)</a></li>
+              </ul>
+            </div>
             <form class="d-flex" role="search">
                 <a href="register.html" class="text-decoration-none btn btn-outline-danger me-2">Register</a>
                 <a href="log_in.html" class="text-decoration-none btn btn-outline-danger">Log In</a>
@@ -279,60 +294,107 @@
       </div>
 
       <!-- Start Songs Category Area -->
-      <div class="m-5">
-        <h4>Hip Hop Songs</h4>
-        <div class="row mt-4">
-          <div class="col-6 col-md-3">
-            <div class="card">
-              <div class="card-header text-center text-light">
-                <img src="Images/Avangard - LONOWN.jpeg" alt="" class="card-img">
-                <p class="mt-2">Avangard</p>
-                <small>LONOWN</small>
+      <section class="p-4 mx-5">
+        <h5 class="song-category-title mx-1">Hip Hop Songs</h5>
+        <div class="m-4"  style="width: 200px;">
+          <div style="position: relative;">
+            <img src="Images/Avangard - LONOWN.jpeg" class="img-fluid" style="width: 200px; height: 200px;">
+            <a href="">
+              <div style="position: absolute; background-color: #000000bb; left: 0px; top: 0px; height: 200px; width: 200px;">
+                <i class="fa-regular fa-circle-play fa-2xl" style="top: 50%; left: 50%; transform: translate(-50%, -50%); position: absolute;"></i>
               </div>
-            </div>
+            </a>
           </div>
-
-          <div class="col-6 col-md-3">
-            <div class="card">
-              <div class="card-header text-center text-light">
-                <img src="Images/big dawgs hanumankind.jpeg" alt="" class="card-img">
-                <p class="mt-2">Big Dawgs</p>
-                <small>Hanumankind</small>
-              </div>
-            </div>
+          <div>
+            <div class="text-white">Avangard</div>
+            <small>LONOWN</small>
           </div>
+        </div>
 
-          <div class="col-6 col-md-3">
-            <div class="card">
-              <div class="card-header text-center text-light">
-                <img src="Images/Avangard - LONOWN.jpeg" alt="" class="card-img">
-                <p class="mt-2">Avangard</p>
-                <small>LONOWN</small>
-              </div>
-            </div>
-          </div>
+      </section>
+      <!-- End Song Category Area -->
 
-          <div class="col-6 col-md-3">
-            <div class="card">
-              <div class="card-header text-center text-light">
-                <img src="Images/Avangard - LONOWN.jpeg" alt="" class="card-img">
-                <p class="mt-2">Avangard</p>
-                <small>LONOWN</small>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-6 col-md-3">
-            <div class="card">
+      <!-- Start Pricing Cards -->
+      <div class="my-5 container">
+        <h2 class="text-center text-light">Subscription Plans</h2>
+        <div class="row g-3 mt-4">
+          <div class="col-12 col-md-4">
+            <div class="card shadow-lg list-card text-white">
               <div class="card-header">
-                <img src="Images/Avangard - LONOWN.jpeg" alt="" class="card-img">
-                <p class="mt-2">Avangard</p>
-                <small>LONOWN</small>
+                <p class="fs-5">Basic</p>
+                <p><h1 class="d-inline">$0,00 /</h1> month</p>
+                <p class="pt-3">Enjoy with Limited Access</p>
+                <button class="btn w-100 btn-danger">Start for Free</button>
+                <hr>
+                <p class="text-center mt-4">Features</p>
+                <p><i class="fa-solid fa-check pe-3 "></i>Ads between Songs</p>
+                <p><i class="fa-solid fa-check pe-3 "></i>Basic Song Quality</p>
+                <p><i class="fa-solid fa-check pe-3 "></i>No Offline Download</p>
+                <p><i class="fa-solid fa-check pe-3 "></i>Limited Selection of Songs</p>
+                <p><i class="fa-solid fa-check pe-3 "></i>Shuffle Play Only</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-12 col-md-4">
+            <div class="card shadow list-card text-white ">
+              <div class="card-header">
+                <p class="fs-5 d-inline">Premium</p>
+                <span class="float-end border border-danger rounded-2 p-1 bg-danger text-light">Most Popular</span>
+                <p><h1 class="d-inline">$5,99 /</h1> month</p>
+                <p class="pt-3">Ad-Free Experience</p>
+                <button class="btn w-100 btn-danger">Upgrade to Premium</button>
+                <hr>
+                <p class="text-center mt-4">Features</p>
+                <p><i class="fa-solid fa-check pe-3 "></i>Ad-free Music Streaming</p>
+                <p><i class="fa-solid fa-check pe-3 "></i>High Quality Audio</p>
+                <p><i class="fa-solid fa-check pe-3 "></i>Offline Download</p>
+                <p><i class="fa-solid fa-check pe-3 "></i>Access to Exclusive Content</p>
+                <p><i class="fa-solid fa-check pe-3 "></i>Personalized Playlists</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-12 col-md-4">
+            <div class="card shadow list-card text-white">
+              <div class="card-header">
+                <p class="fs-5 d-inline">Hi-Fi Plan</p>
+                <p><h1 class="d-inline">$9,99 /</h1> month</p>
+                <p class="pt-3">Unlock the Best Experience</p>
+                <button class="btn w-100 btn-danger">Ready to get Hi-Fi ?</button>
+                <hr>
+                <p class="text-center mt-4">Features</p>
+                <p><i class="fa-solid fa-check pe-3 "></i>All Premium Plan Benefits</p>
+                <p><i class="fa-solid fa-check pe-3 "></i>Lossless audio quality</p>
+                <p><i class="fa-solid fa-check pe-3 "></i>Spatial Audio Support</p>
+                <p><i class="fa-solid fa-check pe-3 "></i>enhanced Audio Settings</p>
+                <p><i class="fa-solid fa-check pe-3 "></i>For High-End Audio Devices</p>
               </div>
             </div>
           </div>
         </div>
       </div>
+      <!-- End Pricing Cards -->
+
+      <!-- Start Footer -->
+      
+      <footer class="border-top p-4 shadow-lg bg-light">
+        <div class="container"></div>
+          <div class="row">
+            <div class="col">
+              <img src="Images/EchoPlay Logo.png" alt="" class="align-items-center">
+            </div>
+            <div class="col fs-1 mt-4 text-danger ms-4">
+              <p></p>
+                <a href=""><i class="fa-brands fa-facebook me-3"></i></a>
+                <a href=""><i class="fa-brands fa-youtube me-3"></i></a>
+                <a href=""><i class="fa-brands fa-square-x-twitter me-3"></i></a>
+                <a href=""><i class="fa-brands fa-square-instagram"></i></a>
+              </p>
+            </div>
+            <div class="col"></div>
+          </div>
+        </div>
+      </footer>
+      
 
       <script src="bootstrap/js/bootstrap.bundle.js"></script>
       <script src="./Fonts/fontawesome-free-6.6.0-web/js/all.min.js"></script>
