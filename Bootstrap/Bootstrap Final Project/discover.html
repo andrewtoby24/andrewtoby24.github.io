@@ -11,7 +11,7 @@
 </head>
 <body>
     <!-- Navbar Start -->
-    <nav class="navbar navbar-expand-lg bg-body-tertiary ps-xl-5 pe-xl-5 mainnav">
+    <nav class="navbar navbar-expand-lg bg-body-tertiary ps-xl-5 pe-xl-5 mainnav sticky-top shadow-lg">
         <div class="container-fluid">
           <a class="navbar-brand" href="#"><img src="Images/EchoPlay Logo.png" alt="" class="w-75 w-md-75"></a>
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -20,13 +20,13 @@
           <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav me-auto mb-2 mb-lg-0 ms-auto nav_bar">
               <li class="nav-item pe-5 fw-bold">
-                <a class="nav-link active text-dark nav-btn" aria-current="page" href="index.html">Home</a>
+                <a class="nav-link text-dark nav-btn" aria-current="page" href="index.html">Home</a>
               </li>
               <li class="nav-item pe-5 fw-bold">
-                <a class="nav-link text-dark nav-btn" href="discover.html">Discover</a>
+                <a class="nav-link active text-dark nav-btn" href="discover.html">Discover</a>
               </li>
               <li class="nav-item pe-5">
-                <a class="nav-link aria-current=page fw-bold text-dark nav-btn" href="#" >New Release</a>
+                <a class="nav-link aria-current=page fw-bold text-dark nav-btn" href="Pricing.html" >Pricing</a>
               </li>
               <li class="nav-item dropdown pe-5 fw-bold">
                 <a class="nav-link dropdown-toggle text-dark nav-btn" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
@@ -39,6 +39,18 @@
                 </ul>
               </li>
             </ul>
+            <div class="dropdown me-2 mb-3 mb-md-3 mb-lg-0">
+              <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                <i class="fa-solid fa-globe me-1"></i>English
+              </button>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#">English (English)</a></li>
+                <li><a class="dropdown-item" href="#">Deutsch (German)</a></li>
+                <li><a class="dropdown-item" href="#">Ελληνικά (Greek)</a></li>
+                <li><a class="dropdown-item" href="#">Français (French)</a></li>
+                <li><a class="dropdown-item" href="#">普通话 (Mandarin)</a></li>
+              </ul>
+            </div>
             <form class="d-flex" role="search">
                 <a href="register.html" class="text-decoration-none btn btn-outline-danger me-2">Register</a>
                 <a href="log_in.html" class="text-decoration-none btn btn-outline-danger">Log In</a>
@@ -48,244 +60,458 @@
       </nav>
       <!-- Navbar End -->
 
-      <!-- Header Start -->
-      <div class="header text-light p-4">
-        <ul class="nav nav-pills mb-3 header-nav" id="pills-tab" role="tablist">
-          <li class="nav-item" role="presentation">
-            <button class="text-light nav-link active id="pills-home-tab" data-bs-toggle="pill" data-bs-target="#pills-home" type="button" role="tab" aria-controls="pills-home" aria-selected="true">Featured</button>
-          </li>
-          <li class="nav-item" role="presentation">
-            <button class="text-light nav-link" id="pills-profile-tab" data-bs-toggle="pill" data-bs-target="#pills-profile" type="button" role="tab" aria-controls="pills-profile" aria-selected="false">Trending</button>
-          </li>
-          <li class="nav-item" role="presentation">
-            <button class="text-light nav-link" id="pills-contact-tab" data-bs-toggle="pill" data-bs-target="#pills-contact" type="button" role="tab" aria-controls="pills-contact" aria-selected="false">New Release</button>
-          </li>
-        </ul>
-        <div class="tab-content pt-2 ps-3" id="pills-tabContent">
-          <div class="tab-pane fade show active" id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab" tabindex="0">
-            <!-- Songs Items -->
-            <div class="col-lg-6 row align-items-center p-2 song-small rounded mb-2">
-              <div class="col-1">
-                <h2>1</h2>
-              </div>
-              <div class="col d-flex">
-                <img src="Images/pone yape.jpeg" alt="" style="width: 50px; height: 50px;" class="rounded me-2">
-                <div>
-                  <div>Ngwe La Min Lay</div>
-                  <small>Pone Yape</small>
-                </div>
-              </div>
-              <div class="col-2">04:26 <i class="fa-solid fa-play ms-3"></i></div>
-            </div>
-            <!-- Song Items -->
-
-             <!-- Songs Items -->
-            <div class="col-lg-6 row align-items-center p-2 song-small rounded mb-2">
-              <div class="col-1">
-                <h2>2</h2>
-              </div>
-              <div class="col d-flex">
-                <img src="Images/Shaboozey_-_A_Bar_Song_(Tipsy).png" alt="" style="width: 50px; height: 50px;" class="rounded me-2">
-                <div>
-                  <div>A Bar Song(Tipsy)</div>
-                  <small>Shaboozey</small>
-                </div>
-              </div>
-              <div class="col-2">04:02 <i class="fa-solid fa-play ms-3"></i></div>
-            </div>
-            <!-- Song Items -->
-
-            <!-- Songs Items -->
-            <div class="col-lg-6 row align-items-center p-2 song-small rounded mb-2">
-              <div class="col-1">
-                <h2>3</h2>
-              </div>
-              <div class="col d-flex">
-                <img src="Images/big dawgs hanumankind.jpeg" alt="" style="width: 50px; height: 50px;" class="rounded me-2">
-                <div>
-                  <div>Big Dawgs</div>
-                  <small>Hanumankind</small>
-                </div>
-              </div>
-              <div class="col-2">04:26 <i class="fa-solid fa-play ms-3"></i></div>
-            </div>
-            <!-- Song Items -->
-
-             <!-- Songs Items -->
-            <div class="col-lg-6 row align-items-center p-2 song-small rounded mb-2">
-              <div class="col-1">
-                <h2>4</h2>
-              </div>
-              <div class="col d-flex">
-                <img src="Images/Kendrick_Lamar_-_Not_Like_Us.png" alt="" style="width: 50px; height: 50px;" class="rounded me-2">
-                <div>
-                  <div>Not Like Us</div>
-                  <small>Kendrick Lamar</small>
-                </div>
-              </div>
-              <div class="col-2">04:26 <i class="fa-solid fa-play ms-3"></i></div>
-            </div>
-            <!-- Song Items -->
-            
-            <!-- Songs Items -->
-             <div class="col-lg-6 row align-items-center p-2 song-small rounded mb-2">
-              <div class="col-1">
-                <h2>5</h2>
-              </div>
-              <div class="col d-flex">
-                <img src="Images/Eminem_-_Houdini.png" alt="" style="width: 50px; height: 50px;" class="rounded me-2">
-                <div>
-                  <div>Houdini</div>
-                  <small>Eminem</small>
-                </div>
-              </div>
-              <div class="col-2">04:26 <i class="fa-solid fa-play ms-3"></i></div>
-            </div>
-            <!-- Song Items -->
-
+      <!-- Music Carousel -->
+      <div class="carousel slide h-50 w-75 d-none d-md-block  mx-auto my-4 carousel-fade" id="Carousel" data-bs-ride="carousel">
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img class="d-block w-100 rounded" src="Images/SabrinaCarpenter Carousel.webp" alt="First slide">
           </div>
-          <div class="tab-pane fade" id="pills-profile" role="tabpanel" aria-labelledby="pills-profile-tab" tabindex="0">
-            <!-- Songs Items -->
-            <div class="col-lg-6 row align-items-center p-2 song-small rounded mb-2">
-              <div class="col-1">
-                <h2>1</h2>
-              </div>
-              <div class="col d-flex">
-                <img src="Images/big dawgs hanumankind.jpeg" alt="" style="width: 50px; height: 50px;" class="rounded me-2">
-                <div>
-                  <div>Big Dawgs</div>
-                  <small>Hanumankind</small>
-                </div>
-              </div>
-              <div class="col-2">04:02 <i class="fa-solid fa-play ms-3"></i></div>
-            </div>
-            <!-- Song Items -->
-
-             <!-- Songs Items -->
-            <div class="col-lg-6 row align-items-center p-2 song-small rounded mb-2">
-              <div class="col-1">
-                <h2>2</h2>
-              </div>
-              <div class="col d-flex">
-                <img src="Images/Espresso_-_Sabrina_Carpenter.png" alt="" style="width: 50px; height: 50px;" class="rounded me-2">
-                <div>
-                  <div>Expresso</div>
-                  <small>Sabrina Carpenter</small>
-                </div>
-              </div>
-              <div class="col-2">04:26 <i class="fa-solid fa-play ms-3"></i></div>
-            </div>
-            <!-- Song Items -->
-
-            <!-- Songs Items -->
-            <div class="col-lg-6 row align-items-center p-2 song-small rounded mb-2">
-              <div class="col-1">
-                <h2>3</h2>
-              </div>
-              <div class="col d-flex">
-                <img src="Images/Tommy_Richman_-_Million_Dollar_Baby.png" alt="" style="width: 50px; height: 50px;" class="rounded me-2">
-                <div>
-                  <div>Million Dollar Baby</div>
-                  <small>Tommy Richman</small>
-                </div>
-              </div>
-              <div class="col-2">04:26 <i class="fa-solid fa-play ms-3"></i></div>
-            </div>
-            <!-- Song Items -->
-
-            <!-- Songs Items -->
-            <div class="col-lg-6 row align-items-center p-2 song-small rounded mb-2">
-              <div class="col-1">
-                <h2>4</h2>
-              </div>
-              <div class="col d-flex">
-                <img src="Images/Avangard - LONOWN.jpeg" alt="" style="width: 50px; height: 50px;" class="rounded me-2">
-                <div>
-                  <div>Avangard</div>
-                  <small>LONOWN</small>
-                </div>
-              </div>
-              <div class="col-2">04:26 <i class="fa-solid fa-play ms-3"></i></div>
-            </div>
-            <!-- Song Items -->
+          <div class="carousel-item">
+            <img class="d-block w-100 rounded" src="Images/Carousel 2.webp" alt="Second slide">
           </div>
+          <div class="carousel-item">
+            <img class="d-block w-100 rounded" src="Images/Sad Carousel.webp" alt="Third slide">
+          </div>
+        </div>
+        <a class="carousel-control-prev" role="button" data-bs-slide="prev" data-bs-target="#Carousel">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        </a>
+        <a class="carousel-control-next" role="button" data-bs-slide="next" data-bs-target="#Carousel">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        </a>
+      </div>
+      <!-- Music Carousel -->
 
-          <div class="tab-pane fade" id="pills-contact" role="tabpanel" aria-labelledby="pills-contact-tab" tabindex="0">
-            <!-- Songs Items -->
-            <div class="col-lg-6 row align-items-center p-2 song-small rounded mb-2">
-              <div class="col-1">
-                <h2>1</h2>
-              </div>
-              <div class="col d-flex">
-                <img src="Images/pone yape.jpeg" alt="" style="width: 50px; height: 50px;" class="rounded me-2">
-                <div>
-                  <div>Ngwe La Min Lay</div>
-                  <small>Pone Yape</small>
-                </div>
-              </div>
-              <div class="col-2">04:26 <i class="fa-solid fa-play ms-3"></i></div>
-            </div>
-            <!-- Song Items -->
+      <!-- Music Carousel -->
+      <div class="carousel slide h-50 w-100 d-block d-md-none  mx-auto my-4 carousel-fade" id="Carousel1" data-bs-ride="carousel">
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img class="d-block w-100 rounded" src="Images/SabrinaCarpenter Carousel.webp" alt="First slide">
+          </div>
+          <div class="carousel-item">
+            <img class="d-block w-100 rounded" src="Images/Carousel 2.webp" alt="Second slide">
+          </div>
+          <div class="carousel-item">
+            <img class="d-block w-100 rounded" src="Images/Sad Carousel.webp" alt="Third slide">
+          </div>
+        </div>
+        <a class="carousel-control-prev" role="button" data-bs-slide="prev" data-bs-target="#Carousel1">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        </a>
+        <a class="carousel-control-next" role="button" data-bs-slide="next" data-bs-target="#Carousel1">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        </a>
+      </div>
+      <!-- Music Carousel -->
 
-            <!-- Songs Items -->
-            <div class="col-lg-6 row align-items-center p-2 song-small rounded mb-2">
-              <div class="col-1">
-                <h2>2</h2>
-              </div>
-              <div class="col d-flex">
-                <img src="Images/big dawgs hanumankind.jpeg" alt="" style="width: 50px; height: 50px;" class="rounded me-2">
-                <div>
-                  <div>Big Dawgs</div>
-                  <small>Hanumankind</small>
-                </div>
-              </div>
-              <div class="col-2">04:26 <i class="fa-solid fa-play ms-3"></i></div>
-            </div>
-            <!-- Song Items -->
+      <h5 class="song-category-title mx-5 pt-4">Echo Play's Exclusive</h5>
 
-            <!-- Songs Items -->
-            <div class="col-lg-6 row align-items-center p-2 song-small rounded mb-2">
-              <div class="col-1">
-                <h2>3</h2>
-              </div>
-              <div class="col d-flex">
-                <img src="Images/Eminem_-_Houdini.png" alt="" style="width: 50px; height: 50px;" class="rounded me-2">
-                <div>
-                  <div>Houdini</div>
-                  <small>Eminem</small>
-                </div>
-              </div>
-              <div class="col-2">04:26 <i class="fa-solid fa-play ms-3"></i></div>
-            </div>
-            <!-- Song Items -->
+      <!-- Start Echo Play Exclusie Category Area -->
+      <section class="pt-2 p-4 mx-5 d-flex justify-content-center" style="flex-wrap: wrap;">
 
-            <!-- Songs Items -->
-            <div class="col-lg-6 row align-items-center p-2 song-small rounded mb-2">
-              <div class="col-1">
-                <h2>4</h2>
+        <!-- Song Card Start -->
+        <div class="m-4"  style="width: 200px;">
+          <div style="position: relative;">
+            <img src="Images/Est ce que tu m'aimes GIMS.jpeg" class="img-fluid big-song-img rounded">
+            <a href="Est_ce_que.html">
+              <div class="big-song-hover">
+                <i class="big-song-play fa-regular fa-circle-play fa-2xl"></i>
               </div>
-              <div class="col d-flex">
-                <img src="Images/Marshmello_and_Kane_Brown_-_Miles_on_It.png" alt="" style="width: 50px; height: 50px;" class="rounded me-2">
-                <div>
-                  <div>Miles on It</div>
-                  <small>Marshmello</small>
-                </div>
+            </a>
+          </div>
+          <div class="pt-2">
+            <div class="text-white">Est ce que tu m'aimes</div>
+            <small class="text-secondary">GIMS</small>
+          </div>
+        </div>
+        <!-- Song Card End -->
+
+        <!-- Song Card Start -->
+        <div class="m-4"  style="width: 200px;">
+          <div style="position: relative;">
+            <img src="Images/Avangard - LONOWN.jpeg" class="img-fluid big-song-img rounded">
+            <a href="#">
+              <div class="big-song-hover">
+                <i class="big-song-play fa-regular fa-circle-play fa-2xl"></i>
               </div>
-              <div class="col-2">04:31 <i class="fa-solid fa-play ms-3"></i></div>
-            </div>
-            <!-- Song Items -->
+            </a>
+          </div>
+          <div class="pt-2">
+            <div class="text-white">Avangard</div>
+            <small class="text-secondary">LONOWN</small>
+          </div>
+        </div>
+        <!-- Song Card End -->
+
+        <!-- Song Card Start -->
+        <div class="m-4"  style="width: 200px;">
+          <div style="position: relative;">
+            <img src="Images/Shaboozey_-_A_Bar_Song_(Tipsy).png" class="img-fluid big-song-img rounded">
+            <a href="#">
+              <div class="big-song-hover">
+                <i class="big-song-play fa-regular fa-circle-play fa-2xl"></i>
+              </div>
+            </a>
+          </div>
+          <div class="pt-2">
+            <div class="text-white">A Bar Song (Tipsy)</div>
+            <small class="text-secondary">Shaboozey</small>
+          </div>
+        </div>
+        <!-- Song Card End -->
+
+        <!-- Song Card Start -->
+        <div class="m-4"  style="width: 200px;">
+          <div style="position: relative;">
+            <img src="Images/HlwanAping.jpeg" class="img-fluid big-song-img rounded">
+            <a href="#">
+              <div class="big-song-hover">
+                <i class="big-song-play fa-regular fa-circle-play fa-2xl"></i>
+              </div>
+            </a>
+          </div>
+          <div class="pt-2">
+            <div class="text-white">Yin Htal Mhar</div>
+            <small class="text-secondary">Hlwan Paing</small>
+          </div>
+        </div>
+        <!-- Song Card End -->
+
+        <!-- Song Card Start -->
+        <div class="m-4"  style="width: 200px;">
+          <div style="position: relative;">
+            <img src="Images/Doggy pone yape.jpg" class="img-fluid big-song-img rounded">
+            <a href="Ngwe_la_Min.html">
+              <div class="big-song-hover">
+                <i class="big-song-play fa-regular fa-circle-play fa-2xl"></i>
+              </div>
+            </a>
+          </div>
+          <div class="pt-2">
+            <div class="text-white">DoggyDoggyDoggy</div>
+            <small class="text-secondary">Pone Yape</small>
+          </div>
+        </div>
+        <!-- Song Card End -->
+
+        <!-- Song Card Start -->
+        <div class="m-4"  style="width: 200px;">
+          <div style="position: relative;">
+            <img src="Images/We_Are_One_cover.png" class="img-fluid big-song-img rounded">
+            <a href="#">
+              <div class="big-song-hover">
+                <i class="big-song-play fa-regular fa-circle-play fa-2xl"></i>
+              </div>
+            </a>
+          </div>
+          <div class="pt-2">
+            <div class="text-white">We are One</div>
+            <small class="text-secondary">PitBull</small>
+          </div>
+        </div>
+        <!-- Song Card End -->
+
+        <!-- Song Card Start -->
+        <div class="m-4"  style="width: 200px;">
+          <div style="position: relative;">
+            <img src="Images/Levitating.jpeg" class="img-fluid big-song-img rounded">
+            <a href="#">
+              <div class="big-song-hover">
+                <i class="big-song-play fa-regular fa-circle-play fa-2xl"></i>
+              </div>
+            </a>
+          </div>
+          <div class="pt-2">
+            <div class="text-white">Levitating</div>
+            <small class="text-secondary">Dua Lipa</small>
+          </div>
+        </div>
+        <!-- Song Card End -->
+
+      </section>
+      <!-- End Echo Play Exclusie Category Area -->
+
+      <h5 class="song-category-title mx-5 pt-4">POP Songs</h5>
+      <!-- Start POP song Category Area -->
+      <section class="pt-2 p-4 mx-5 d-flex justify-content-center" style="flex-wrap: wrap;">
+
+        <!-- Song Card Start -->
+        <div class="m-4"  style="width: 200px;">
+          <div style="position: relative;">
+            <img src="Images/pone yape.jpeg" class="img-fluid big-song-img rounded">
+            <a href="Est_ce_que.html">
+              <div class="big-song-hover">
+                <i class="big-song-play fa-regular fa-circle-play fa-2xl"></i>
+              </div>
+            </a>
+          </div>
+          <div class="pt-2">
+            <div class="text-white">Ngwe La Min Lay</div>
+            <small class="text-secondary">Pone Yape</small>
+          </div>
+        </div>
+        <!-- Song Card End -->
+
+        <!-- Song Card Start -->
+        <div class="m-4"  style="width: 200px;">
+          <div style="position: relative;">
+            <img src="Images/Marshmello_and_Kane_Brown_-_Miles_on_It.png" class="img-fluid big-song-img rounded">
+            <a href="#">
+              <div class="big-song-hover">
+                <i class="big-song-play fa-regular fa-circle-play fa-2xl"></i>
+              </div>
+            </a>
+          </div>
+          <div class="pt-2">
+            <div class="text-white">Miles On It</div>
+            <small class="text-secondary">Marshmello</small>
+          </div>
+        </div>
+        <!-- Song Card End -->
+
+        <!-- Song Card Start -->
+        <div class="m-4"  style="width: 200px;">
+          <div style="position: relative;">
+            <img src="Images/Espresso_-_Sabrina_Carpenter.png" class="img-fluid big-song-img rounded">
+            <a href="#">
+              <div class="big-song-hover">
+                <i class="big-song-play fa-regular fa-circle-play fa-2xl"></i>
+              </div>
+            </a>
+          </div>
+          <div class="pt-2">
+            <div class="text-white">Espresso</div>
+            <small class="text-secondary">Sabrina Carpenter</small>
+          </div>
+        </div>
+        <!-- Song Card End -->
+
+        <!-- Song Card Start -->
+        <div class="m-4"  style="width: 200px;">
+          <div style="position: relative;">
+            <img src="Images/PLEASE.jpg" class="img-fluid big-song-img rounded">
+            <a href="#">
+              <div class="big-song-hover">
+                <i class="big-song-play fa-regular fa-circle-play fa-2xl"></i>
+              </div>
+            </a>
+          </div>
+          <div class="pt-2">
+            <div class="text-white">PleasePleasePlease</div>
+            <small class="text-secondary">Sabrina Carpenter</small>
+          </div>
+        </div>
+        <!-- Song Card End -->
+
+        <!-- Song Card Start -->
+        <div class="m-4"  style="width: 200px;">
+          <div style="position: relative;">
+            <img src="Images/Birds of a Feather Billie ellish.jpeg" class="img-fluid big-song-img rounded">
+            <a href="#">
+              <div class="big-song-hover">
+                <i class="big-song-play fa-regular fa-circle-play fa-2xl"></i>
+              </div>
+            </a>
+          </div>
+          <div class="pt-2">
+            <div class="text-white">Birds of a Feather</div>
+            <small class="text-secondary">Billie Ellish</small>
+          </div>
+        </div>
+        <!-- Song Card End -->
+
+        <!-- Song Card Start -->
+        <div class="m-4"  style="width: 200px;">
+          <div style="position: relative;">
+            <img src="Images/Kendrick_Lamar_-_Not_Like_Us.png" class="img-fluid big-song-img rounded">
+            <a href="#">
+              <div class="big-song-hover">
+                <i class="big-song-play fa-regular fa-circle-play fa-2xl"></i>
+              </div>
+            </a>
+          </div>
+          <div class="pt-2">
+            <div class="text-white">Not Like Us</div>
+            <small class="text-secondary">Kendrick Lamar</small>
+          </div>
+        </div>
+        <!-- Song Card End -->
+
+        <!-- Song Card Start -->
+        <div class="m-4"  style="width: 200px;">
+          <div style="position: relative;">
+            <img src="Images/Chappell_Roan_-_Good_Luck,_Babe!.png" class="img-fluid big-song-img rounded">
+            <a href="#">
+              <div class="big-song-hover">
+                <i class="big-song-play fa-regular fa-circle-play fa-2xl"></i>
+              </div>
+            </a>
+          </div>
+          <div class="pt-2">
+            <div class="text-white">Good Luck, Babe!</div>
+            <small class="text-secondary">Chappell Roan</small>
+          </div>
+        </div>
+        <!-- Song Card End -->
+
+      </section>
+      <!-- End POP song Category Area -->
+
+      <h5 class="song-category-title mx-5 pt-4">Trending Now</h5>
+
+      <!-- Start Trending Now Category Area -->
+      <section class="pt-2 p-4 mx-5 d-flex justify-content-center" style="flex-wrap: wrap;">
+
+        <!-- Song Card Start -->
+        <div class="m-4"  style="width: 200px;">
+          <div style="position: relative;">
+            <img src="Images/die with a smile Lady gaga.jpg" class="img-fluid big-song-img rounded">
+            <a href="Est_ce_que.html">
+              <div class="big-song-hover">
+                <i class="big-song-play fa-regular fa-circle-play fa-2xl"></i>
+              </div>
+            </a>
+          </div>
+          <div class="pt-2">
+            <div class="text-white">Die with A Smile</div>
+            <small class="text-secondary">Lady GaGa</small>
+          </div>
+        </div>
+        <!-- Song Card End -->
+
+        <!-- Song Card Start -->
+        <div class="m-4"  style="width: 200px;">
+          <div style="position: relative;">
+            <img src="Images/TASTE.jpg" class="img-fluid big-song-img rounded">
+            <a href="#">
+              <div class="big-song-hover">
+                <i class="big-song-play fa-regular fa-circle-play fa-2xl"></i>
+              </div>
+            </a>
+          </div>
+          <div class="pt-2">
+            <div class="text-white">Taste</div>
+            <small class="text-secondary">Sabrina Carpenter</small>
+          </div>
+        </div>
+        <!-- Song Card End -->
+
+        <!-- Song Card Start -->
+        <div class="m-4"  style="width: 200px;">
+          <div style="position: relative;">
+            <img src="Images/Espresso_-_Sabrina_Carpenter.png" class="img-fluid big-song-img rounded">
+            <a href="#">
+              <div class="big-song-hover">
+                <i class="big-song-play fa-regular fa-circle-play fa-2xl"></i>
+              </div>
+            </a>
+          </div>
+          <div class="pt-2">
+            <div class="text-white">Espresso</div>
+            <small class="text-secondary">Sabrina Carpenter</small>
+          </div>
+        </div>
+        <!-- Song Card End -->
+
+        <!-- Song Card Start -->
+        <div class="m-4"  style="width: 200px;">
+          <div style="position: relative;">
+            <img src="Images/Teddy_Swims_-_Lose_Control.jpg" class="img-fluid big-song-img rounded">
+            <a href="#">
+              <div class="big-song-hover">
+                <i class="big-song-play fa-regular fa-circle-play fa-2xl"></i>
+              </div>
+            </a>
+          </div>
+          <div class="pt-2">
+            <div class="text-white">Lose Control</div>
+            <small class="text-secondary">Teddy Swims</small>
+          </div>
+        </div>
+        <!-- Song Card End -->
+
+        <!-- Song Card Start -->
+        <div class="m-4"  style="width: 200px;">
+          <div style="position: relative;">
+            <img src="Images/Post_Malone_and_Morgan_Wallen_-_I_Had_Some_Help.png" class="img-fluid big-song-img rounded">
+            <a href="Ngwe_la_Min.html">
+              <div class="big-song-hover">
+                <i class="big-song-play fa-regular fa-circle-play fa-2xl"></i>
+              </div>
+            </a>
+          </div>
+          <div class="pt-2">
+            <div class="text-white">I Had Some Help</div>
+            <small class="text-secondary">Post Malone</small>
+          </div>
+        </div>
+        <!-- Song Card End -->
+
+        <!-- Song Card Start -->
+        <div class="m-4"  style="width: 200px;">
+          <div style="position: relative;">
+            <img src="Images/big dawgs hanumankind.jpeg" class="img-fluid big-song-img rounded">
+            <a href="#">
+              <div class="big-song-hover">
+                <i class="big-song-play fa-regular fa-circle-play fa-2xl"></i>
+              </div>
+            </a>
+          </div>
+          <div class="pt-2">
+            <div class="text-white">Big Dawgs</div>
+            <small class="text-secondary">Hanumankind</small>
+          </div>
+        </div>
+        <!-- Song Card End -->
+
+        <!-- Song Card Start -->
+        <div class="m-4"  style="width: 200px;">
+          <div style="position: relative;">
+            <img src="Images/Doggy pone yape.jpg" class="img-fluid big-song-img rounded">
+            <a href="#">
+              <div class="big-song-hover">
+                <i class="big-song-play fa-regular fa-circle-play fa-2xl"></i>
+              </div>
+            </a>
+          </div>
+          <div class="pt-2">
+            <div class="text-white">DoggyDoggyDoggy</div>
+            <small class="text-secondary">Pone Yape</small>
+          </div>
+        </div>
+        <!-- Song Card End -->
+
+      </section>
+      <!-- End Trending Now Category Area -->
+      
+      <!-- Footer Start -->
+      <div class="container-fluid bg-light py-4 px-md-4">
+        <div class="row">
+          <div class="col-12 col-md-6 text-danger fs-3">
+            <a href=""><i class="fa-brands fa-facebook me-3 text-danger"></i></a>
+            <a href=""><i class="fa-brands fa-square-instagram me-3 text-danger"></i></a>
+            <a href=""><i class="fa-brands fa-telegram me-3 text-danger"></i></a>
+            <a href=""><i class="fa-brands fa-youtube text-danger"></i></a>
+          </div>
+          <div class="col-12 col-md-6 text-start text-md-end my-auto pt-3 pt-md-0">
+            <a href="" class="me-2 me-lg-3 text-decoration-none fw-bold text-black"><span class="foot-nav">Terms & Service</span></a>
+            <a href="" class="me-2 me-lg-3 text-decoration-none fw-bold text-black"><span class="foot-nav">Privacy Policy</span></a>
+            <a href="" class="me-2 me-lg-3 text-decoration-none fw-bold text-black"><span class="foot-nav">Cookies Policy</span></a>
+            <a href="register.html" class="text-decoration-none fw-bold text-black"><span class="foot-nav">Register</span></a>
+          </div>
+        </div>
+        <hr class="d-none d-md-block">
+        <div class="row d-none d-md-block">
+          <div class="col">
+            <p class="fw-bold">Copyright &copy; 2024 Echo Play</p>
+          </div>
+          <div class="col text-end">
+            <p class="fw-bold">All Rights Resered</p>
           </div>
         </div>
       </div>
-
-      <!-- Start Category Area -->
-      <section class="">
-        <!-- Song card start -->
-        <div>
-
-        </div>
-        <!-- Song card end -->
-      </section>
+      <!-- Footer End -->
+      
 
       <script src="bootstrap/js/bootstrap.bundle.js"></script>
       <script src="./Fonts/fontawesome-free-6.6.0-web/js/all.min.js"></script>

@@ -11,47 +11,59 @@
 </head>
 <body style="background-color: #0b1828;">
     <!-- Navbar Start -->
-    <nav class="navbar navbar-expand-lg bg-body-tertiary ps-xl-5 pe-xl-5 mainnav">
-        <div class="container-fluid">
-          <a class="navbar-brand" href="#"><img src="Images/EchoPlay Logo.png" alt="" class="w-75 w-md-75"></a>
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav me-auto mb-2 mb-lg-0 ms-auto nav_bar">
-              <li class="nav-item pe-5 fw-bold">
-                <a class="nav-link text-dark nav-btn" aria-current="page" href="index.html">Home</a>
-              </li>
-              <li class="nav-item pe-5 fw-bold">
-                <a class="nav-link text-dark nav-btn" href="#">Discover</a>
-              </li>
-              <li class="nav-item pe-5">
-                <a class="nav-link aria-current=page fw-bold text-dark nav-btn" href="#" >New Release</a>
-              </li>
-              <li class="nav-item dropdown pe-5 fw-bold">
-                <a class="nav-link dropdown-toggle text-dark nav-btn active" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                  Top Picks
-                </a>
-                <ul class="dropdown-menu text-dark">
-                  <li><a class="dropdown-item" href="top_artists.html">Top Artists</a></li>
-                  <li><a class="dropdown-item" href="top_songs.html">Top Songs</a></li>
-                  <li><a class="dropdown-item" href="chart.html">Charts</a></li>
-                </ul>
-              </li>
+    <nav class="navbar navbar-expand-lg bg-body-tertiary ps-xl-5 pe-xl-5 mainnav sticky-top shadow-lg">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#"><img src="Images/EchoPlay Logo.png" alt="" class="w-75 w-md-75"></a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0 ms-auto nav_bar">
+            <li class="nav-item pe-5 fw-bold">
+              <a class="nav-link active text-dark nav-btn" aria-current="page" href="index.html">Home</a>
+            </li>
+            <li class="nav-item pe-5 fw-bold">
+              <a class="nav-link text-dark nav-btn" href="discover.html">Discover</a>
+            </li>
+            <li class="nav-item pe-5">
+              <a class="nav-link aria-current=page fw-bold text-dark nav-btn" href="Pricing.html" >Pricing</a>
+            </li>
+            <li class="nav-item dropdown pe-5 fw-bold">
+            <a class="nav-link dropdown-toggle text-dark nav-btn" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Top Picks
+            </a>
+            <ul class="dropdown-menu text-dark">
+              <li><a class="dropdown-item" href="top_artists.html">Top Artists</a></li>
+              <li><a class="dropdown-item" href="top_songs.html">Top Songs</a></li>
+              <li><a class="dropdown-item" href="chart.html">Charts</a></li>
             </ul>
-            <form class="d-flex" role="search">
-              <a href="register.html" class="text-decoration-none btn btn-outline-danger me-2">Register</a>
-              <a href="log_in.html" class="text-decoration-none btn btn-outline-danger">Log In</a>
-          </form>
-          </div>
+          </li>
+        </ul>
+        <div class="dropdown me-2 mb-3 mb-md-3 mb-lg-0">
+          <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+            <i class="fa-solid fa-globe me-1"></i>English
+          </button>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="#">English (English)</a></li>
+            <li><a class="dropdown-item" href="#">Deutsch (German)</a></li>
+            <li><a class="dropdown-item" href="#">Ελληνικά (Greek)</a></li>
+            <li><a class="dropdown-item" href="#">Français (French)</a></li>
+            <li><a class="dropdown-item" href="#">普通话 (Mandarin)</a></li>
+          </ul>
         </div>
-      </nav>
-      <!-- Navbar End -->
+        <form class="d-flex" role="search">
+            <a href="register.html" class="text-decoration-none btn btn-outline-danger me-2">Register</a>
+            <a href="log_in.html" class="text-decoration-none btn btn-outline-danger">Log In</a>
+        </form>
+      </div>
+    </div>
+  </nav>
+  <!-- Navbar End -->
 
       <!-- Chart Start -->
       <div class="container mx-auto w-100 w-lg-50">
         <!-- Start Chart Nav Menu -->
-        <div class="text-light mt-5">
+        <div class="text-light mt-5" id="hot_sept">
           <h1 class="text-center mb-5">LATEST CHART</h1>
           <hr style="border: 3px solid white;">
           <div class="d-flex justify-content-between">
@@ -63,8 +75,8 @@
           
               <ul class="dropdown-menu">
                 <li><a class="dropdown-item" href="#hot_sept">Hottest September</a></li>
-                <li><a class="dropdown-item" href="#">Global Hottest</a></li>
-                <li><a class="dropdown-item" href="#">Tik Tok Hottest</a></li>
+                <li><a class="dropdown-item" href="#global_hot">Global Hottest</a></li>
+                <li><a class="dropdown-item" href="#tiktok_hottest">Tik Tok Hottest</a></li>
               </ul>
             </div>
           </div>
@@ -73,7 +85,7 @@
         <!-- End Chart Nav Menu -->
 
         <!-- Start Hottest September Chart -->
-        <div class="container" id="hot_sept">
+        <div class="container">
 
           <div class="col row align-items-center pt-2 bg-primary text-white border-bottom border-dark">
             <div class="col-1 d-none d-lg-block">
@@ -124,7 +136,7 @@
             <div class="col d-flex">
               <img src="Images/PLEASE.jpg" alt="" style="width: 50px; height: 50px;" class="rounded me-2">
               <div>
-                <div>PleasePleasePlease</div>
+                <div>Please</div>
                 <small>Sabrina Carpenter</small>
               </div>
             </div>
@@ -239,8 +251,424 @@
           </div>
         </div>
       </div>
+      <!-- End Hottest September Chart -->
+      <hr class="text-light mt-5 mb-3" id="global_hot">
+  
+
+      <div class="container mx-auto w-100 w-lg-50">
+        <!-- Start Chart Nav Menu -->
+        <div class="text-light mt-5">
+          <hr style="border: 3px solid white;">
+          <div class="d-flex justify-content-between">
+            <h4 class="">Global Hottest</h4>
+            <div class="dropdown">
+              <a class="btn btn-secondary dropdown-toggle nav-btn" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                Explore
+              </a>
+          
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#hot_sept">Hottest September</a></li>
+                <li><a class="dropdown-item" href="#global_hot">Global Hottest</a></li>
+                <li><a class="dropdown-item" href="#tiktok_hottest">Tik Tok Hottest</a></li>
+              </ul>
+            </div>
+          </div>
+          <hr style="border: 3px solid white;">
+        </div>
+        <!-- End Chart Nav Menu -->
+
+        <!-- Start Global Hottest Chart -->
+        <div class="container">
+
+          <div class="col row align-items-center pt-2 bg-primary text-white border-bottom border-dark">
+            <div class="col-1 d-none d-lg-block">
+              <h5>Rank</h5>
+            </div>
+            <div class="col">
+              <h5>Song Title</h5>
+            </div>
+            <div class="col-2 text-center">Position</div>
+            <div class="col-2 text-center">Last Month</div>
+            <div class="col-2 text-center">Weeks on Chart</div>
+          </div>
+
+          <div class="col row align-items-center p-2 mb-1 bg-light">
+            <div class="col-1 d-none d-lg-block">
+              <h2>1</h2>
+            </div>
+            <div class="col d-flex">
+              <img src="Images/die with a smile Lady gaga.jpg" alt="" style="width: 50px; height: 50px;" class="rounded me-2">
+              <div>
+                <div>Die With A Smile</div>
+                <small>Lady Gaga</small>
+              </div>
+            </div>
+            <div class="col-2 text-center"><i class="fa-solid fa-arrow-up text-success"></i></div>
+            <div class="col-2 text-center fs-4">2</div>
+            <div class="col-2 text-center fs-4">2</div>
+          </div>
+          <div class="col row align-items-center p-2 mb-1 bg-light">
+            <div class="col-1 d-none d-lg-block">
+              <h2>2</h2>
+            </div>
+            <div class="col d-flex">
+              <img src="Images/TASTE.jpg" alt="" style="width: 50px; height: 50px;" class="rounded me-2">
+              <div>
+                <div>Taste</div>
+                <small>Sabrina Carpenter</small>
+              </div>
+            </div>
+            <div class="col-2 text-center"><i class="fa-solid fa-arrow-up text-success"></i></div>
+            <div class="col-2 text-center fs-4">-</div>
+            <div class="col-2 text-center fs-4">1</div>
+          </div>
+          <div class="col row align-items-center p-2 mb-1 bg-light">
+            <div class="col-1 d-none d-lg-block">
+              <h2>3</h2>
+            </div>
+            <div class="col d-flex">
+              <img src="Images/Espresso_-_Sabrina_Carpenter.png" alt="" style="width: 50px; height: 50px;" class="rounded me-2">
+              <div>
+                <div>Espresso</div>
+                <small>Sabrina Carpenter</small>
+              </div>
+            </div>
+            <div class="col-2 text-center"><i class="fa-solid fa-equals"></i></div>
+            <div class="col-2 text-center fs-4">3</div>
+            <div class="col-2 text-center fs-4">20</div>
+          </div>
+          <div class="col row align-items-center p-2 mb-1 bg-light">
+            <div class="col-1 d-none d-lg-block">
+              <h2>4</h2>
+            </div>
+            <div class="col d-flex">
+              <img src="Images/PLEASE.jpg" alt="" style="width: 50px; height: 50px;" class="rounded me-2">
+              <div>
+                <div>Please</div>
+                <small>Sabrina Carpenter</small>
+              </div>
+            </div>
+            <div class="col-2 text-center"><i class="fa-solid fa-arrow-up text-success"></i></div>
+            <div class="col-2 text-center fs-4">6</div>
+            <div class="col-2 text-center fs-4">12</div>
+          </div>
+          <div class="col row align-items-center p-2 mb-1 bg-light">
+            <div class="col-1 d-none d-lg-block">
+              <h2>5</h2>
+            </div>
+            <div class="col d-flex">
+              <img src="Images/Birds of a Feather Billie ellish.jpeg" alt="" style="width: 50px; height: 50px;" class="rounded me-2">
+              <div>
+                <div>Birds of a Feather</div>
+                <small>Billie Ellish</small>
+              </div>
+            </div>
+            <div class="col-2 text-center"><i class="fa-solid fa-arrow-down text-danger"></i></div>
+            <div class="col-2 text-center fs-4">2</div>
+            <div class="col-2 text-center fs-4">16</div>
+          </div>
+          <div class="col row align-items-center p-2 mb-1 bg-light">
+            <div class="col-1 d-none d-lg-block">
+              <h2>6</h2>
+            </div>
+            <div class="col d-flex">
+              <img src="Images/Shaboozey_-_A_Bar_Song_(Tipsy).png" alt="" style="width: 50px; height: 50px;" class="rounded me-2">
+              <div>
+                <div>A Bar Song (Tipsy)</div>
+                <small>Shaboozey</small>
+              </div>
+            </div>
+            <div class="col-2 text-center"><i class="fa-solid fa-arrow-down text-danger"></i></div>
+            <div class="col-2 text-center fs-4">5</div>
+            <div class="col-2 text-center fs-4">20</div>
+          </div>
+          <div class="col row align-items-center p-2 mb-1 bg-light">
+            <div class="col-1 d-none d-lg-block">
+              <h2>7</h2>
+            </div>
+            <div class="col d-flex">
+              <img src="Images/Chappell_Roan_-_Good_Luck,_Babe!.png" alt="" style="width: 50px; height: 50px;" class="rounded me-2">
+              <div>
+                <div>Good Luck, Babe!</div>
+                <small>Chappell Roan</small>
+              </div>
+            </div>
+            <div class="col-2 text-center"><i class="fa-solid fa-equals"></i></div>
+            <div class="col-2 text-center fs-4">8</div>
+            <div class="col-2 text-center fs-4">20</div>
+          </div>
+          <div class="col row align-items-center p-2 mb-1 bg-light">
+            <div class="col-1 d-none d-lg-block">
+              <h2>8</h2>
+            </div>
+            <div class="col d-flex">
+              <img src="Images/Teddy_Swims_-_Lose_Control.jpg" alt="" style="width: 50px; height: 50px;" class="rounded me-2">
+              <div>
+                <div>Lose Control</div>
+                <small>Teddy Swims</small>
+              </div>
+            </div>
+            <div class="col-2 text-center"><i class="fa-solid fa-arrow-up text-success"></i></div>
+            <div class="col-2 text-center fs-4">12</div>
+            <div class="col-2 text-center fs-4">50</div>
+          </div>
+          <div class="col row align-items-center p-2 mb-1 bg-light">
+            <div class="col-1 d-none d-lg-block">
+              <h2>9</h2>
+            </div>
+            <div class="col d-flex">
+              <img src="Images/Post_Malone_and_Morgan_Wallen_-_I_Had_Some_Help.png" alt="" style="width: 50px; height: 50px;" class="rounded me-2">
+              <div>
+                <div>I Had Some Help</div>
+                <small>Post Malone</small>
+              </div>
+            </div>
+            <div class="col-2 text-center"><i class="fa-solid fa-arrow-down text-danger"></i></div>
+            <div class="col-2 text-center fs-4">4</div>
+            <div class="col-2 text-center fs-4">16</div>
+          </div>
+          <div class="col row align-items-center p-2 mb-1 bg-light">
+            <div class="col-1 d-none d-lg-block">
+              <h2>10</h2>
+            </div>
+            <div class="col d-flex">
+              <img src="Images/big dawgs hanumankind.jpeg" alt="" style="width: 50px; height: 50px;" class="rounded me-2">
+              <div>
+                <div>Big Dawgs</div>
+                <small>Hanumankind</small>
+              </div>
+            </div>
+            <div class="col-2 text-center"><i class="fa-solid fa-arrow-down text-danger"></i></div>
+            <div class="col-2 text-center fs-4">11</div>
+            <div class="col-2 text-center fs-4">5</div>
+          </div>
+        </div>
+      </div>
+      <!-- End Global Hottest Chart -->
+
+      <hr class="text-light mt-5 mb-3" id="tiktok_hottest">
+  
+      <!-- Start TikTok Hottest -->
+      <div class="container mx-auto w-100 w-lg-50">
+        <!-- Start Chart Nav Menu -->
+        <div class="text-light mt-5">
+          <hr style="border: 3px solid white;">
+          <div class="d-flex justify-content-between">
+            <h4 class="">TikTok Hottest</h4>
+            <div class="dropdown">
+              <a class="btn btn-secondary dropdown-toggle nav-btn" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                Explore
+              </a>
+          
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#hot_sept">Hottest September</a></li>
+                <li><a class="dropdown-item" href="#global_hot">Global Hottest</a></li>
+                <li><a class="dropdown-item" href="#tiktok_hottest">Tik Tok Hottest</a></li>
+              </ul>
+            </div>
+          </div>
+          <hr style="border: 3px solid white;">
+        </div>
+        <!-- End Chart Nav Menu -->
+
+        <!-- Start Tiktok Hottest Chart -->
+        <div class="container mb-5">
+
+          <div class="col row align-items-center pt-2 bg-primary text-white border-bottom border-dark">
+            <div class="col-1 d-none d-lg-block">
+              <h5>Rank</h5>
+            </div>
+            <div class="col">
+              <h5>Song Title</h5>
+            </div>
+            <div class="col-2 text-center">Position</div>
+            <div class="col-2 text-center">Last Month</div>
+            <div class="col-2 text-center">Weeks on Chart</div>
+          </div>
+
+          <div class="col row align-items-center p-2 mb-1 bg-light">
+            <div class="col-1 d-none d-lg-block">
+              <h2>1</h2>
+            </div>
+            <div class="col d-flex">
+              <img src="Images/Clean_Bandit_-_Symphony.png" alt="" style="width: 50px; height: 50px;" class="rounded me-2">
+              <div>
+                <div>Symphony</div>
+                <small>Clean Bandit</small>
+              </div>
+            </div>
+            <div class="col-2 text-center"><i class="fa-solid fa-equals"></i></div>
+            <div class="col-2 text-center fs-4">1</div>
+            <div class="col-2 text-center fs-4">2</div>
+          </div>
+          <div class="col row align-items-center p-2 mb-1 bg-light">
+            <div class="col-1 d-none d-lg-block">
+              <h2>2</h2>
+            </div>
+            <div class="col d-flex">
+              <img src="Images/disco.jpeg" alt="" style="width: 50px; height: 50px;" class="rounded me-2">
+              <div>
+                <div>Disco</div>
+                <small>Surf Curse</small>
+              </div>
+            </div>
+            <div class="col-2 text-center"><i class="fa-solid fa-equals"></i></div>
+            <div class="col-2 text-center fs-4">2</div>
+            <div class="col-2 text-center fs-4">3</div>
+          </div>
+          <div class="col row align-items-center p-2 mb-1 bg-light">
+            <div class="col-1 d-none d-lg-block">
+              <h2>3</h2>
+            </div>
+            <div class="col d-flex">
+              <img src="Images/TASTE.jpg" alt="" style="width: 50px; height: 50px;" class="rounded me-2">
+              <div>
+                <div>Taste</div>
+                <small>Sabrina Carpenter</small>
+              </div>
+            </div>
+            <div class="col-2 text-center"><i class="fa-solid fa-arrow-up text-success"></i></div>
+            <div class="col-2 text-center fs-4">9</div>
+            <div class="col-2 text-center fs-4">2</div>
+          </div>
+          <div class="col row align-items-center p-2 mb-1 bg-light">
+            <div class="col-1 d-none d-lg-block">
+              <h2>4</h2>
+            </div>
+            <div class="col d-flex">
+              <img src="Images/die with a smile Lady gaga.jpg" alt="" style="width: 50px; height: 50px;" class="rounded me-2">
+              <div>
+                <div>Die With A Smile</div>
+                <small>Lady GaGa</small>
+              </div>
+            </div>
+            <div class="col-2 text-center"><i class="fa-solid fa-arrow-up text-success"></i></div>
+            <div class="col-2 text-center fs-4">8</div>
+            <div class="col-2 text-center fs-4">2</div>
+          </div>
+          <div class="col row align-items-center p-2 mb-1 bg-light">
+            <div class="col-1 d-none d-lg-block">
+              <h2>5</h2>
+            </div>
+            <div class="col d-flex">
+              <img src="Images/Tommy_Richman_-_Million_Dollar_Baby.png" alt="" style="width: 50px; height: 50px;" class="rounded me-2">
+              <div>
+                <div>Million Dollar baby</div>
+                <small>Tommy Richman</small>
+              </div>
+            </div>
+            <div class="col-2 text-center"><i class="fa-solid fa-equals"></i></div>
+            <div class="col-2 text-center fs-4">6</div>
+            <div class="col-2 text-center fs-4">18</div>
+          </div>
+          <div class="col row align-items-center p-2 mb-1 bg-light">
+            <div class="col-1 d-none d-lg-block">
+              <h2>6</h2>
+            </div>
+            <div class="col d-flex">
+              <img src="Images/Birds of a Feather Billie ellish.jpeg" alt="" style="width: 50px; height: 50px;" class="rounded me-2">
+              <div>
+                <div>Birds Of A Feather</div>
+                <small>Billie Ellish</small>
+              </div>
+            </div>
+            <div class="col-2 text-center"><i class="fa-solid fa-arrow-up text-success"></i></div>
+            <div class="col-2 text-center fs-4">14</div>
+            <div class="col-2 text-center fs-4">15</div>
+          </div>
+          <div class="col row align-items-center p-2 mb-1 bg-light">
+            <div class="col-1 d-none d-lg-block">
+              <h2>7</h2>
+            </div>
+            <div class="col d-flex">
+              <img src="Images/big dawgs hanumankind.jpeg" alt="" style="width: 50px; height: 50px;" class="rounded me-2">
+              <div>
+                <div>Big Dawgs</div>
+                <small>Hanumankind</small>
+              </div>
+            </div>
+            <div class="col-2 text-center"><i class="fa-solid fa-equals"></i></div>
+            <div class="col-2 text-center fs-4">5</div>
+            <div class="col-2 text-center fs-4">5</div>
+          </div>
+          <div class="col row align-items-center p-2 mb-1 bg-light">
+            <div class="col-1 d-none d-lg-block">
+              <h2>8</h2>
+            </div>
+            <div class="col d-flex">
+              <img src="Images/PLEASE.jpg" alt="" style="width: 50px; height: 50px;" class="rounded me-2">
+              <div>
+                <div>Please</div>
+                <small>Sabrina Carpenter</small>
+              </div>
+            </div>
+            <div class="col-2 text-center"><i class="fa-solid fa-equals"></i></div>
+            <div class="col-2 text-center fs-4">36</div>
+            <div class="col-2 text-center fs-4">13</div>
+          </div>
+          <div class="col row align-items-center p-2 mb-1 bg-light">
+            <div class="col-1 d-none d-lg-block">
+              <h2>9</h2>
+            </div>
+            <div class="col d-flex">
+              <img src="Images/Kendrick_Lamar_-_Not_Like_Us.png" alt="" style="width: 50px; height: 50px;" class="rounded me-2">
+              <div>
+                <div>Not Like Us</div>
+                <small>Kendrick Lamar</small>
+              </div>
+            </div>
+            <div class="col-2 text-center"><i class="fa-solid fa-arrow-down text-danger"></i></div>
+            <div class="col-2 text-center fs-4">40</div>
+            <div class="col-2 text-center fs-4">17</div>
+          </div>
+          <div class="col row align-items-center p-2 mb-1 bg-light">
+            <div class="col-1 d-none d-lg-block">
+              <h2>10</h2>
+            </div>
+            <div class="col d-flex">
+              <img src="Images/sabrina-carpenter-short-n-sweet.webp" alt="" style="width: 50px; height: 50px;" class="rounded me-2">
+              <div>
+                <div>Bed Chem</div>
+                <small>Sabrina Carpenter</small>
+              </div>
+            </div>
+            <div class="col-2 text-center"><i class="fa-solid fa-arrow-up text-success"></i></div>
+            <div class="col-2 text-center fs-4">-</div>
+            <div class="col-2 text-center fs-4">1</div>
+          </div>
+        </div>
+      </div>
+      <!-- End Tiktok Hottest Chart -->
+
+      <!-- Footer Start -->
+      <div class="container-fluid bg-light py-4 px-md-4">
+        <div class="row">
+          <div class="col-12 col-md-6 text-danger fs-3">
+            <a href=""><i class="fa-brands fa-facebook me-3 text-danger"></i></a>
+            <a href=""><i class="fa-brands fa-square-instagram me-3 text-danger"></i></a>
+            <a href=""><i class="fa-brands fa-telegram me-3 text-danger"></i></a>
+            <a href=""><i class="fa-brands fa-youtube text-danger"></i></a>
+          </div>
+          <div class="col-12 col-md-6 text-start text-md-end my-auto pt-3 pt-md-0">
+            <a href="" class="me-2 me-lg-3 text-decoration-none fw-bold text-black"><span class="foot-nav">Terms & Service</span></a>
+            <a href="" class="me-2 me-lg-3 text-decoration-none fw-bold text-black"><span class="foot-nav">Privacy Policy</span></a>
+            <a href="" class="me-2 me-lg-3 text-decoration-none fw-bold text-black"><span class="foot-nav">Cookies Policy</span></a>
+            <a href="register.html" class="text-decoration-none fw-bold text-black"><span class="foot-nav">Register</span></a>
+          </div>
+        </div>
+        <hr class="d-none d-md-block">
+        <div class="row d-none d-md-block">
+          <div class="col">
+            <p class="fw-bold">Copyright &copy; 2024 Echo Play</p>
+          </div>
+          <div class="col text-end">
+            <p class="fw-bold">All Rights Reserved</p>
+          </div>
+        </div>
+      </div>
+      <!-- Footer End -->
 
       <script src="bootstrap/js/bootstrap.bundle.js"></script>
-      <script src="./Fonts/fontawesome-free-6.6.0-web/js/all.min.js"></script>
+      <script src="Fonts/fontawesome-free-6.6.0-web/js/all.min.js"></script>
 </body>
 </html>

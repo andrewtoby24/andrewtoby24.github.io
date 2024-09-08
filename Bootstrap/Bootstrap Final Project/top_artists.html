@@ -11,242 +11,241 @@
 </head>
 <body>
     <!-- Navbar Start -->
-    <nav class="navbar navbar-expand-lg bg-body-tertiary ps-xl-5 pe-xl-5 mainnav">
-        <div class="container-fluid">
-          <a class="navbar-brand" href="#"><img src="Images/EchoPlay Logo.png" alt="" class="w-75 w-md-75"></a>
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav me-auto mb-2 mb-lg-0 ms-auto nav_bar">
-              <li class="nav-item pe-5 fw-bold">
-                <a class="nav-link active text-dark nav-btn" aria-current="page" href="index.html">Home</a>
-              </li>
-              <li class="nav-item pe-5 fw-bold">
-                <a class="nav-link text-dark nav-btn" href="#">Discover</a>
-              </li>
-              <li class="nav-item pe-5">
-                <a class="nav-link aria-current=page fw-bold text-dark nav-btn" href="#" >New Release</a>
-              </li>
-              <li class="nav-item dropdown pe-5 fw-bold">
-                <a class="nav-link dropdown-toggle text-dark nav-btn" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                  Top Picks
-                </a>
-                <ul class="dropdown-menu text-dark">
-                  <li><a class="dropdown-item" href="top_artists.html">Top Artists</a></li>
-                  <li><a class="dropdown-item" href="top_songs.html">Top Songs</a></li>
-                  <li><a class="dropdown-item" href="chart.html">Charts</a></li>
-                </ul>
-              </li>
+    <nav class="navbar navbar-expand-lg bg-body-tertiary ps-xl-5 pe-xl-5 mainnav sticky-top shadow-lg">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#"><img src="Images/EchoPlay Logo.png" alt="" class="w-75 w-md-75"></a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0 ms-auto nav_bar">
+            <li class="nav-item pe-5 fw-bold">
+              <a class="nav-link active text-dark nav-btn" aria-current="page" href="index.html">Home</a>
+            </li>
+            <li class="nav-item pe-5 fw-bold">
+              <a class="nav-link text-dark nav-btn" href="discover.html">Discover</a>
+            </li>
+            <li class="nav-item pe-5">
+              <a class="nav-link aria-current=page fw-bold text-dark nav-btn" href="Pricing.html" >Pricing</a>
+            </li>
+            <li class="nav-item dropdown pe-5 fw-bold">
+            <a class="nav-link dropdown-toggle text-dark nav-btn" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Top Picks
+            </a>
+            <ul class="dropdown-menu text-dark">
+              <li><a class="dropdown-item" href="top_artists.html">Top Artists</a></li>
+              <li><a class="dropdown-item" href="top_songs.html">Top Songs</a></li>
+              <li><a class="dropdown-item" href="chart.html">Charts</a></li>
             </ul>
-            <form class="d-flex" role="search">
-                <button class="btn btn-outline-danger me-2" type="button">Register</button>
-                <button class="btn btn-outline-danger" type="button">Log In</button>
-            </form>
-          </div>
-        </div>
-      </nav>
-      <!-- Navbar End -->
-
-      <!-- Header Start -->
-      <div class="header text-light p-4">
-        <ul class="nav nav-pills mb-3 header-nav" id="pills-tab" role="tablist">
-          <li class="nav-item" role="presentation">
-            <button class="text-light nav-link active id="pills-home-tab" data-bs-toggle="pill" data-bs-target="#pills-home" type="button" role="tab" aria-controls="pills-home" aria-selected="true">Featured</button>
-          </li>
-          <li class="nav-item" role="presentation">
-            <button class="text-light nav-link" id="pills-profile-tab" data-bs-toggle="pill" data-bs-target="#pills-profile" type="button" role="tab" aria-controls="pills-profile" aria-selected="false">Trending</button>
-          </li>
-          <li class="nav-item" role="presentation">
-            <button class="text-light nav-link" id="pills-contact-tab" data-bs-toggle="pill" data-bs-target="#pills-contact" type="button" role="tab" aria-controls="pills-contact" aria-selected="false">New Release</button>
           </li>
         </ul>
-        <div class="tab-content pt-2 ps-3" id="pills-tabContent">
-          <div class="tab-pane fade show active" id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab" tabindex="0">
-            <!-- Songs Items -->
-            <div class="col-lg-6 row align-items-center p-2 song-small rounded mb-2">
-              <div class="col-1">
-                <h2>1</h2>
-              </div>
-              <div class="col d-flex">
-                <img src="Images/pone yape.jpeg" alt="" style="width: 50px; height: 50px;" class="rounded me-2">
-                <div>
-                  <div>Ngwe La Min Lay</div>
-                  <small>Pone Yape</small>
-                </div>
-              </div>
-              <div class="col-2">04:26 <i class="fa-solid fa-play ms-3"></i></div>
-            </div>
-            <!-- Song Items -->
+        <div class="dropdown me-2 mb-3 mb-md-3 mb-lg-0">
+          <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+            <i class="fa-solid fa-globe me-1"></i>English
+          </button>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="#">English (English)</a></li>
+            <li><a class="dropdown-item" href="#">Deutsch (German)</a></li>
+            <li><a class="dropdown-item" href="#">Ελληνικά (Greek)</a></li>
+            <li><a class="dropdown-item" href="#">Français (French)</a></li>
+            <li><a class="dropdown-item" href="#">普通话 (Mandarin)</a></li>
+          </ul>
+        </div>
+          <form class="d-flex" role="search">
+            <a href="register.html" class="text-decoration-none btn btn-outline-danger me-2">Register</a>
+            <a href="log_in.html" class="text-decoration-none btn btn-outline-danger">Log In</a>
+          </form>
+        </div>
+      </div>
+    </nav>
+    <!-- Navbar End -->
+      <h1 class="text-center my-5 text-white">TOP ARTISTS</h1>
+      <!-- Start Hottest September Chart -->
+      <div class="container mb-5">
 
-             <!-- Songs Items -->
-            <div class="col-lg-6 row align-items-center p-2 song-small rounded mb-2">
-              <div class="col-1">
-                <h2>2</h2>
-              </div>
-              <div class="col d-flex">
-                <img src="Images/Est ce que tu m'aimes GIMS.jpeg" alt="" style="width: 50px; height: 50px;" class="rounded me-2">
-                <div>
-                  <div>Est ce que tu m'aimes</div>
-                  <small>Maitre Gims</small>
-                </div>
-              </div>
-              <div class="col-2">04:02 <i class="fa-solid fa-play ms-3"></i></div>
-            </div>
-            <!-- Song Items -->
-
-            <!-- Songs Items -->
-            <div class="col-lg-6 row align-items-center p-2 song-small rounded mb-2">
-              <div class="col-1">
-                <h2>3</h2>
-              </div>
-              <div class="col d-flex">
-                <img src="Images/big dawgs hanumankind.jpeg" alt="" style="width: 50px; height: 50px;" class="rounded me-2">
-                <div>
-                  <div>Big Dawgs</div>
-                  <small>Hanumankind</small>
-                </div>
-              </div>
-              <div class="col-2">04:26 <i class="fa-solid fa-play ms-3"></i></div>
-            </div>
-            <!-- Song Items -->
-
-             <!-- Songs Items -->
-            <div class="col-lg-6 row align-items-center p-2 song-small rounded mb-2">
-              <div class="col-1">
-                <h2>4</h2>
-              </div>
-              <div class="col d-flex">
-                <img src="Images/pone yape.jpeg" alt="" style="width: 50px; height: 50px;" class="rounded me-2">
-                <div>
-                  <div>Ngwe La Min Lay</div>
-                  <small>Neo Image Album</small>
-                </div>
-              </div>
-              <div class="col-2">04:26 <i class="fa-solid fa-play ms-3"></i></div>
-            </div>
-            <!-- Song Items -->
-            
-            <!-- Songs Items -->
-             <div class="col-lg-6 row align-items-center p-2 song-small rounded mb-2">
-              <div class="col-1">
-                <h2>5</h2>
-              </div>
-              <div class="col d-flex">
-                <img src="Images/pone yape.jpeg" alt="" style="width: 50px; height: 50px;" class="rounded me-2">
-                <div>
-                  <div>Ngwe La Min Lay</div>
-                  <small>Neo Image Album</small>
-                </div>
-              </div>
-              <div class="col-2">04:26 <i class="fa-solid fa-play ms-3"></i></div>
-            </div>
-            <!-- Song Items -->
-
+        <div class="col row align-items-center pt-2 bg-primary text-white border-bottom border-dark">
+          <div class="col-1 d-none d-lg-block">
+            <h5>Rank</h5>
           </div>
-          <div class="tab-pane fade" id="pills-profile" role="tabpanel" aria-labelledby="pills-profile-tab" tabindex="0">
-            <!-- Songs Items -->
-            <div class="col-lg-6 row align-items-center p-2 song-small rounded mb-2">
-              <div class="col-1">
-                <h2>1</h2>
-              </div>
-              <div class="col d-flex">
-                <img src="Images/Est ce que tu m'aimes GIMS.jpeg" alt="" style="width: 50px; height: 50px;" class="rounded me-2">
-                <div>
-                  <div>Est ce que tu m'aimes</div>
-                  <small>Maitre Gims</small>
-                </div>
-              </div>
-              <div class="col-2">04:02 <i class="fa-solid fa-play ms-3"></i></div>
-            </div>
-            <!-- Song Items -->
-
-             <!-- Songs Items -->
-            <div class="col-lg-6 row align-items-center p-2 song-small rounded mb-2">
-              <div class="col-1">
-                <h2>2</h2>
-              </div>
-              <div class="col d-flex">
-                <img src="Images/Espresso_-_Sabrina_Carpenter.png" alt="" style="width: 50px; height: 50px;" class="rounded me-2">
-                <div>
-                  <div>Expresso</div>
-                  <small>Sabrina Carpenter</small>
-                </div>
-              </div>
-              <div class="col-2">04:26 <i class="fa-solid fa-play ms-3"></i></div>
-            </div>
-            <!-- Song Items -->
-
-            <!-- Songs Items -->
-            <div class="col-lg-6 row align-items-center p-2 song-small rounded mb-2">
-              <div class="col-1">
-                <h2>3</h2>
-              </div>
-              <div class="col d-flex">
-                <img src="Images/Tommy_Richman_-_Million_Dollar_Baby.png" alt="" style="width: 50px; height: 50px;" class="rounded me-2">
-                <div>
-                  <div>Million Dollar Baby</div>
-                  <small>Tommy Richman</small>
-                </div>
-              </div>
-              <div class="col-2">04:26 <i class="fa-solid fa-play ms-3"></i></div>
-            </div>
-            <!-- Song Items -->
-
-            <!-- Songs Items -->
-            <div class="col-lg-6 row align-items-center p-2 song-small rounded mb-2">
-              <div class="col-1">
-                <h2>4</h2>
-              </div>
-              <div class="col d-flex">
-                <img src="Images/Avangard - LONOWN.jpeg" alt="" style="width: 50px; height: 50px;" class="rounded me-2">
-                <div>
-                  <div>Avangard</div>
-                  <small>LONOWN</small>
-                </div>
-              </div>
-              <div class="col-2">04:26 <i class="fa-solid fa-play ms-3"></i></div>
-            </div>
-            <!-- Song Items -->
+          <div class="col">
+            <h5>Artist</h5>
           </div>
+          <div class="col-2 text-center">Position</div>
+          <div class="col-2 text-center">Last Month</div>
+          <div class="col-2 text-center">Weeks on Chart</div>
+        </div>
 
-          <div class="tab-pane fade" id="pills-contact" role="tabpanel" aria-labelledby="pills-contact-tab" tabindex="0">
-            <!-- Songs Items -->
-            <div class="col-lg-6 row align-items-center p-2 song-small rounded mb-2">
-              <div class="col-1">
-                <h2>1</h2>
-              </div>
-              <div class="col d-flex">
-                <img src="Images/pone yape.jpeg" alt="" style="width: 50px; height: 50px;" class="rounded me-2">
-                <div>
-                  <div>Ngwe La Min Lay</div>
-                  <small>Pone Yape</small>
-                </div>
-              </div>
-              <div class="col-2">04:26 <i class="fa-solid fa-play ms-3"></i></div>
+        <div class="col row align-items-center p-2 mb-1 bg-light">
+          <div class="col-1 d-none d-lg-block">
+            <h2>1</h2>
+          </div>
+          <div class="col d-flex">
+            <img src="Images/Espresso_-_Sabrina_Carpenter.png" alt="" style="width: 50px; height: 50px;" class="rounded me-2">
+            <div class="my-auto">
+              <div>Sabrina Carpenter</div>
             </div>
-            <!-- Song Items -->
+          </div>
+          <div class="col-2 text-center"><i class="fa-solid fa-arrow-up text-success"></i></div>
+          <div class="col-2 text-center fs-4">8</div>
+          <div class="col-2 text-center fs-4">39</div>
+        </div>
+        <div class="col row align-items-center p-2 mb-1 bg-light">
+          <div class="col-1 d-none d-lg-block">
+            <h2>2</h2>
+          </div>
+          <div class="col d-flex">
+            <img src="Images/travis-scott-press-2023-a-billboard-1548.webp" alt="" style="width: 50px; height: 50px;" class="rounded me-2">
+            <div class="my-auto">
+              <div>Travis Scott</div>
+            </div>
+          </div>
+          <div class="col-2 text-center"><i class="fa-solid fa-arrow-up text-success"></i></div>
+          <div class="col-2 text-center fs-4">49</div>
+          <div class="col-2 text-center fs-4">426</div>
+        </div>
+        <div class="col row align-items-center p-2 mb-1 bg-light">
+          <div class="col-1 d-none d-lg-block">
+            <h2>3</h2>
+          </div>
+          <div class="col d-flex">
+            <img src="Images/postmalone.jpeg" alt="" style="width: 50px; height: 50px;" class="rounded me-2">
+            <div class="my-auto">
+              <div>Post Malone</div>
+            </div>
+          </div>
+          <div class="col-2 text-center"><i class="fa-solid fa-arrow-down text-danger"></i></div>
+          <div class="col-2 text-center fs-4">1</div>
+          <div class="col-2 text-center fs-4">427</div>
+        </div>
+        <div class="col row align-items-center p-2 mb-1 bg-light">
+          <div class="col-1 d-none d-lg-block">
+            <h2>4</h2>
+          </div>
+          <div class="col d-flex">
+            <img src="Images/Chappell_Roan_-_Good_Luck,_Babe!.png" alt="" style="width: 50px; height: 50px;" class="rounded me-2">
+            <div class="my-auto">
+              <div>Chappell Roan</div>
+            </div>
+          </div>
+          <div class="col-2 text-center"><i class="fa-solid fa-arrow-down text-danger"></i></div>
+          <div class="col-2 text-center fs-4">3</div>
+          <div class="col-2 text-center fs-4">20</div>
+        </div>
+        <div class="col row align-items-center p-2 mb-1 bg-light">
+          <div class="col-1 d-none d-lg-block">
+            <h2>5</h2>
+          </div>
+          <div class="col d-flex">
+            <img src="Images/morgan-wallen-dqx-91x91.jpg" alt="" style="width: 50px; height: 50px;" class="rounded me-2">
+            <div class="my-auto">
+              <div>Morgan Wallen</div>
+            </div>
+          </div>
+          <div class="col-2 text-center"><i class="fa-solid fa-arrow-down text-danger"></i></div>
+          <div class="col-2 text-center fs-4">4</div>
+          <div class="col-2 text-center fs-4">286</div>
+        </div>
+        <div class="col row align-items-center p-2 mb-1 bg-light">
+          <div class="col-1 d-none d-lg-block">
+            <h2>6</h2>
+          </div>
+          <div class="col d-flex">
+            <img src="Images/taylor-swift-9sy-344x344.jpg" alt="" style="width: 50px; height: 50px;" class="rounded me-2">
+            <div class="my-auto">
+              <div>Taylor Swift</div>
+            </div>
+          </div>
+          <div class="col-2 text-center"><i class="fa-solid fa-arrow-down text-danger"></i></div>
+          <div class="col-2 text-center fs-4">2</div>
+          <div class="col-2 text-center fs-4">527</div>
+        </div>
+        <div class="col row align-items-center p-2 mb-1 bg-light">
+          <div class="col-1 d-none d-lg-block">
+            <h2>7</h2>
+          </div>
+          <div class="col d-flex">
+            <img src="Images/Zach-Bryan-press-credit-Trevor-Pavlik-2023-billboard-1548.webp" alt="" style="width: 50px; height: 50px;" class="rounded me-2">
+            <div class="my-auto">
+              <div>Zach Bryan</div>
+            </div>
+          </div>
+          <div class="col-2 text-center"><i class="fa-solid fa-arrow-down text-danger"></i></div>
+          <div class="col-2 text-center fs-4">5</div>
+          <div class="col-2 text-center fs-4">120</div>
+        </div>
+        <div class="col row align-items-center p-2 mb-1 bg-light">
+          <div class="col-1 d-none d-lg-block">
+            <h2>8</h2>
+          </div>
+          <div class="col d-flex">
+            <img src="Images/luke-combs-735-344x344.jpg" alt="" style="width: 50px; height: 50px;" class="rounded me-2">
+            <div class="my-auto">
+              <div>Luke Combs</div>
+            </div>
+          </div>
+          <div class="col-2 text-center"><i class="fa-solid fa-arrow-down text-danger"></i></div>
+          <div class="col-2 text-center fs-4">7</div>
+          <div class="col-2 text-center fs-4">391</div>
+        </div>
+        <div class="col row align-items-center p-2 mb-1 bg-light">
+          <div class="col-1 d-none d-lg-block">
+            <h2>9</h2>
+          </div>
+          <div class="col d-flex">
+            <img src="Images/BE.webp" alt="" style="width: 50px; height: 50px;" class="rounded me-2">
+            <div class="my-auto">
+              <div>Billie Ellish</div>
+            </div>
+          </div>
+          <div class="col-2 text-center"><i class="fa-solid fa-arrow-down text-danger"></i></div>
+          <div class="col-2 text-center fs-4">6</div>
+          <div class="col-2 text-center fs-4">306</div>
+        </div>
+        <div class="col row align-items-center p-2 mb-1 bg-light">
+          <div class="col-1 d-none d-lg-block">
+            <h2>10</h2>
+          </div>
+          <div class="col d-flex">
+            <img src="Images/cover-lainey-wilson-billboard-2024-bb7-joelle-grace-taylor-1-1260.webp" alt="" style="width: 50px; height: 50px;" class="rounded me-2">
+            <div class="my-auto">
+              <div>Lainey Wilson</div>
+            </div>
+          </div>
+          <div class="col-2 text-center"><i class="fa-solid fa-arrow-up text-success"></i></div>
+          <div class="col-2 text-center fs-4">30</div>
+          <div class="col-2 text-center fs-4">106</div>
+        </div>
+      </div>
+      <!-- End Top Artists Chart -->
 
-            <!-- Songs Items -->
-            <div class="col-lg-6 row align-items-center p-2 song-small rounded mb-2">
-              <div class="col-1">
-                <h2>2</h2>
-              </div>
-              <div class="col d-flex">
-                <img src="Images/big dawgs hanumankind.jpeg" alt="" style="width: 50px; height: 50px;" class="rounded me-2">
-                <div>
-                  <div>Big Dawgs</div>
-                  <small>Hanumankind</small>
-                </div>
-              </div>
-              <div class="col-2">04:26 <i class="fa-solid fa-play ms-3"></i></div>
-            </div>
-            <!-- Song Items -->
+      <!-- Footer Start -->
+      <div class="container-fluid bg-light py-4 px-md-4">
+        <div class="row">
+          <div class="col-12 col-md-6 text-danger fs-3">
+            <a href=""><i class="fa-brands fa-facebook me-3 text-danger"></i></a>
+            <a href=""><i class="fa-brands fa-square-instagram me-3 text-danger"></i></a>
+            <a href=""><i class="fa-brands fa-telegram me-3 text-danger"></i></a>
+            <a href=""><i class="fa-brands fa-youtube text-danger"></i></a>
+          </div>
+          <div class="col-12 col-md-6 text-start text-md-end my-auto pt-3 pt-md-0">
+            <a href="" class="me-2 me-lg-3 text-decoration-none fw-bold text-black"><span class="foot-nav">Terms & Service</span></a>
+            <a href="" class="me-2 me-lg-3 text-decoration-none fw-bold text-black"><span class="foot-nav">Privacy Policy</span></a>
+            <a href="" class="me-2 me-lg-3 text-decoration-none fw-bold text-black"><span class="foot-nav">Cookies Policy</span></a>
+            <a href="register.html" class="text-decoration-none fw-bold text-black"><span class="foot-nav">Register</span></a>
+          </div>
+        </div>
+        <hr class="d-none d-md-block">
+        <div class="row d-none d-md-block">
+          <div class="col">
+            <p class="fw-bold">Copyright &copy; 2024 Echo Play</p>
+          </div>
+          <div class="col text-end">
+            <p class="fw-bold">All Rights Reserved</p>
           </div>
         </div>
       </div>
-
-      <script src="bootstrap/js/bootstrap.bundle.js"></script>
-      <script src="./Fonts/fontawesome-free-6.6.0-web/js/all.min.js"></script>
+      <!-- Footer End -->
+    <script src="bootstrap/js/bootstrap.bundle.js"></script>
+    <script src="./Fonts/fontawesome-free-6.6.0-web/js/all.min.js"></script>
 </body>
 </html>
