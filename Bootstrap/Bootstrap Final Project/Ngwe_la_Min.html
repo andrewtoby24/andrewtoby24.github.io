@@ -40,16 +40,13 @@
               </li>
             </ul>
             <div class="dropdown me-2 mb-3 mb-md-3 mb-lg-0">
-              <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
-                <i class="fa-solid fa-globe me-1"></i>English
-              </button>
-              <ul class="dropdown-menu">
-                <li><a class="dropdown-item" href="#">English (English)</a></li>
-                <li><a class="dropdown-item" href="#">Deutsch (German)</a></li>
-                <li><a class="dropdown-item" href="#">Ελληνικά (Greek)</a></li>
-                <li><a class="dropdown-item" href="#">Français (French)</a></li>
-                <li><a class="dropdown-item" href="#">普通话 (Mandarin)</a></li>
-              </ul>
+              <select class="form-select bg-secondary text-light" aria-label="Default select example">
+                <option selected>English</option>
+                <option value="1">Deutsch</option>
+                <option value="2">Français</option>
+                <option value="3">普通话</option>
+                <option value="4">မြန်မာ</option>
+              </select>
             </div>
             <form class="d-flex" role="search">
                 <a href="register.html" class="text-decoration-none btn btn-outline-danger me-2">Register</a>
@@ -202,7 +199,7 @@
     <!-- Footer Start -->
     <div class="container-fluid bg-light py-4 px-md-4">
       <div class="row">
-        <div class="col-12 col-md-6 text-danger fs-3">
+        <div class="col-12 col-md-6 text-danger fs-3 text-center text-md-start">
           <a href=""><i class="fa-brands fa-facebook me-3 text-danger"></i></a>
           <a href=""><i class="fa-brands fa-square-instagram me-3 text-danger"></i></a>
           <a href=""><i class="fa-brands fa-telegram me-3 text-danger"></i></a>
@@ -217,11 +214,8 @@
         </div>
         <hr class="d-none d-md-block">
         <div class="row d-none d-md-block">
-          <div class="col">
-            <p class="fw-bold">Copyright &copy; 2024 Echo Play</p>
-          </div>
-          <div class="col text-end">
-            <p class="fw-bold">All Rights Resered</p>
+          <div class="col text-center">
+            <p class="fw-bold">Copyright &copy; 2024 Echo Play / All Rights Reserved</p>
           </div>
         </div>
       </div>

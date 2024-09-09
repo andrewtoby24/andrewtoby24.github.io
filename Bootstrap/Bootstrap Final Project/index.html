@@ -40,16 +40,13 @@
             </li>
           </ul>
           <div class="dropdown me-2 mb-3 mb-md-3 mb-lg-0">
-            <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
-              <i class="fa-solid fa-globe me-1"></i>English
-            </button>
-            <ul class="dropdown-menu">
-              <li><a class="dropdown-item" href="#">English (English)</a></li>
-              <li><a class="dropdown-item" href="#">Deutsch (German)</a></li>
-              <li><a class="dropdown-item" href="#">Ελληνικά (Greek)</a></li>
-              <li><a class="dropdown-item" href="#">Français (French)</a></li>
-              <li><a class="dropdown-item" href="#">普通话 (Mandarin)</a></li>
-            </ul>
+            <select class="form-select bg-secondary text-light" aria-label="Default select example">
+              <option selected>English</option>
+              <option value="1">Deutsch</option>
+              <option value="2">Français</option>
+              <option value="3">普通话</option>
+              <option value="4">မြန်မာ</option>
+            </select>
           </div>
           <form class="d-flex" role="search">
               <a href="register.html" class="text-decoration-none btn btn-outline-danger me-2">Register</a>
@@ -75,20 +72,22 @@
       </ul>
       <div class="tab-content pt-2 ps-3" id="pills-tabContent">
         <div class="tab-pane fade show active" id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab" tabindex="0">
-        <!-- Songs Items -->
-          <div class="col-lg-6 row align-items-center p-2 song-small rounded mb-2">
-            <div class="col-1">
-              <h2>1</h2>
-            </div>
-            <div class="col d-flex">
-              <img src="Images/pone yape.jpeg" alt="" style="width: 50px; height: 50px;" class="rounded me-2">
-              <div>
-            <div>Ngwe La Min Lay</div>
-              <small>Pone Yape</small>
-            </div>
-            </div>
-              <div class="col-2">04:26 <i class="fa-solid fa-play ms-3"></i></div>
-            </div>
+            <!-- Songs Items -->
+            <a href="Ngwe_la_Min.html" class="text-decoration-none text-white">
+              <div class="col-lg-6 row align-items-center p-2 song-small rounded mb-2">
+                <div class="col-1">
+                  <h2>1</h2>
+                </div>
+                <div class="col d-flex">
+                  <img src="Images/pone yape.jpeg" alt="" style="width: 50px; height: 50px;" class="rounded me-2">
+                  <div>
+                <div>Ngwe La Min Lay</div>
+                  <small>Pone Yape</small>
+                </div>
+                </div>
+                  <div class="col-2">04:26 <i class="fa-solid fa-play ms-3"></i></div>
+                </div>
+            </a>
             <!-- Song Items -->
 
             <!-- Songs Items -->
@@ -158,19 +157,21 @@
 
           <div class="tab-pane fade" id="pills-profile" role="tabpanel" aria-labelledby="pills-profile-tab" tabindex="0">
             <!-- Songs Items -->
-            <div class="col-lg-6 row align-items-center p-2 song-small rounded mb-2">
-              <div class="col-1">
-                <h2>1</h2>
-              </div>
-              <div class="col d-flex">
-                <img src="Images/big dawgs hanumankind.jpeg" alt="" style="width: 50px; height: 50px;" class="rounded me-2">
-                <div>
-                  <div>Big Dawgs</div>
-                  <small>Hanumankind</small>
+            <a href="big_dawgs.html" class="text-decoration-none text-white">
+              <div class="col-lg-6 row align-items-center p-2 song-small rounded mb-2">
+                <div class="col-1">
+                  <h2>1</h2>
                 </div>
+                <div class="col d-flex">
+                  <img src="Images/big dawgs hanumankind.jpeg" alt="" style="width: 50px; height: 50px;" class="rounded me-2">
+                  <div>
+                    <div>Big Dawgs</div>
+                    <small>Hanumankind</small>
+                  </div>
+                </div>
+                <div class="col-2">04:02 <i class="fa-solid fa-play ms-3"></i></div>
               </div>
-              <div class="col-2">04:02 <i class="fa-solid fa-play ms-3"></i></div>
-            </div>
+            </a>
             <!-- Song Items -->
 
              <!-- Songs Items -->
@@ -530,7 +531,7 @@
         <div class="m-4"  style="width: 200px;">
           <div style="position: relative;">
             <img src="Images/HlwanAping.jpeg" class="img-fluid big-song-img rounded">
-            <a href="#">
+            <a href="hlwan_paing.html">
               <div class="big-song-hover">
                 <i class="big-song-play fa-regular fa-circle-play fa-2xl"></i>
               </div>
@@ -664,7 +665,7 @@
       <!-- Footer Start -->
       <div class="container-fluid bg-light py-4 px-md-4">
         <div class="row">
-          <div class="col-12 col-md-6 text-danger fs-3">
+          <div class="col-12 col-md-6 text-danger fs-3 text-center text-md-start">
             <a href=""><i class="fa-brands fa-facebook me-3 text-danger"></i></a>
             <a href=""><i class="fa-brands fa-square-instagram me-3 text-danger"></i></a>
             <a href=""><i class="fa-brands fa-telegram me-3 text-danger"></i></a>
@@ -679,11 +680,8 @@
         </div>
         <hr class="d-none d-md-block">
         <div class="row d-none d-md-block">
-          <div class="col">
-            <p class="fw-bold">Copyright &copy; 2024 Echo Play</p>
-          </div>
-          <div class="col text-end">
-            <p class="fw-bold">All Rights Resered</p>
+          <div class="col text-center">
+            <span class="fw-bold">Copyright &copy; 2024 Echo Play / All Rights Reserved</span>
           </div>
         </div>
       </div>

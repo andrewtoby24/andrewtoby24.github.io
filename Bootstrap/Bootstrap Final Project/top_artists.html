@@ -20,7 +20,7 @@
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
           <ul class="navbar-nav me-auto mb-2 mb-lg-0 ms-auto nav_bar">
             <li class="nav-item pe-5 fw-bold">
-              <a class="nav-link active text-dark nav-btn" aria-current="page" href="index.html">Home</a>
+              <a class="nav-link text-dark nav-btn" aria-current="page" href="index.html">Home</a>
             </li>
             <li class="nav-item pe-5 fw-bold">
               <a class="nav-link text-dark nav-btn" href="discover.html">Discover</a>
@@ -29,7 +29,7 @@
               <a class="nav-link aria-current=page fw-bold text-dark nav-btn" href="Pricing.html" >Pricing</a>
             </li>
             <li class="nav-item dropdown pe-5 fw-bold">
-            <a class="nav-link dropdown-toggle text-dark nav-btn" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            <a class="nav-link dropdown-toggle text-dark nav-btn active" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
               Top Picks
             </a>
             <ul class="dropdown-menu text-dark">
@@ -40,16 +40,13 @@
           </li>
         </ul>
         <div class="dropdown me-2 mb-3 mb-md-3 mb-lg-0">
-          <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
-            <i class="fa-solid fa-globe me-1"></i>English
-          </button>
-          <ul class="dropdown-menu">
-            <li><a class="dropdown-item" href="#">English (English)</a></li>
-            <li><a class="dropdown-item" href="#">Deutsch (German)</a></li>
-            <li><a class="dropdown-item" href="#">Ελληνικά (Greek)</a></li>
-            <li><a class="dropdown-item" href="#">Français (French)</a></li>
-            <li><a class="dropdown-item" href="#">普通话 (Mandarin)</a></li>
-          </ul>
+          <select class="form-select bg-secondary text-light" aria-label="Default select example">
+            <option selected>English</option>
+            <option value="1">Deutsch</option>
+            <option value="2">Français</option>
+            <option value="3">普通话</option>
+            <option value="4">မြန်မာ</option>
+          </select>
         </div>
           <form class="d-flex" role="search">
             <a href="register.html" class="text-decoration-none btn btn-outline-danger me-2">Register</a>
@@ -236,11 +233,8 @@
         </div>
         <hr class="d-none d-md-block">
         <div class="row d-none d-md-block">
-          <div class="col">
-            <p class="fw-bold">Copyright &copy; 2024 Echo Play</p>
-          </div>
-          <div class="col text-end">
-            <p class="fw-bold">All Rights Reserved</p>
+          <div class="col text-center">
+            <p class="fw-bold">Copyright &copy; 2024 Echo Play / All Rights Reserved</p>
           </div>
         </div>
       </div>
