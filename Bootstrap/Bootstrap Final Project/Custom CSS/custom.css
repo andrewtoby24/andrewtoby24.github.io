@@ -78,8 +78,9 @@ body{
 }
 
 .soc_btn{
-    color: #31374a;
+    color: biege;
     border-color: #ddd;
+    
 }
 
 .soc_btn:hover{
@@ -95,7 +96,7 @@ body{
     transform: translate(-50%, -50%);
     padding-left: 0.5rem;
     padding-right: 0.5rem;
-    background-color: white;
+    background-color: #0b1828;;
     font-size: 0.8rem;
     font-weight: 500;
     color: #999;
@@ -109,16 +110,6 @@ body{
     text-decoration: underline;
 }
 /* Log In form End */
-
-.list-card{
-    background: rgb(66,65,83);
-    background: linear-gradient(90deg, rgba(66,65,83,0.7399334733893557) 0%, rgba(0,0,0,1) 0%, rgba(63,62,82,0.9360119047619048) 100%);
-}
-
-.listcard{
-    background: rgb(56,56,56);
-    background: linear-gradient(90deg, rgba(56,56,56,1) 0%, rgba(0,0,0,1) 50%, rgba(56,56,56,1) 100%);
-}
 
 .song-category-title::after{
     content: '';
